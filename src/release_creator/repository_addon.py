@@ -90,7 +90,7 @@ class TestRepositoryAddon(unittest.TestCase):
     
     def test_repository_addon(self):
         repositoryAddon = RepositoryAddon()
-        self.assertNotEqual(repositoryAddon.GetAddonXml(), '')
+        self.assertNotEqual(repositoryAddon.GetAddonXmlText(), '')
         self.assertTrue(repositoryAddon.CreateRelease())
 
 if __name__ == '__main__':
