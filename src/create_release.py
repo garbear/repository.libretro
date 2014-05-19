@@ -18,10 +18,12 @@
 # *  http://www.gnu.org/copyleft/gpl.html
 # *
 
-from addon import Addon
-from addons_xml import AddonsXml
-from libretro_super import LibretroSuper
-from repository_addon import RepositoryAddon
+from release_creator.addon import Addon
+from release_creator.addons_xml import AddonsXml
+from release_creator.libretro_super import LibretroSuper
+from release_creator.repository_addon import RepositoryAddon
+
+import unittest
 
 def CreateRelease():
     print('This can take a while. Grab a drink!')
@@ -37,10 +39,10 @@ def CreateRelease():
     print('Using branch %s of libretro-super' % libretroSuper.GetBranch())
     
     print('Updating libretro-super projects')
-    #libretroSuper.Fetch()
+    libretroSuper.Fetch()
     
     print('Building libretro-super projects')
-    #libretroSuper.Build()
+    libretroSuper.Build()
     
     print('Analyzing build results for generated binaries')
     dlls = libretroSuper.GetDlls()
@@ -66,5 +68,9 @@ def CreateRelease():
     
     print('Finished!')
 
+class TestCreateRelease(unittest.TestCase):
+    def test_create_release(self):
+        CreateRelease()
+
 if __name__ == '__main__':
-    CreateRelease()
+    unittest.main()

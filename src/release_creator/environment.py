@@ -22,9 +22,10 @@ import platform
 import subprocess
 import unittest
 
-ADDONS_DIR        = 'addons'
-PYTHON_SCRIPT_DIR = 'src'
-RELEASE_DIR       = 'release'
+ADDONS_DIR      = 'addons'
+SRC_DIR         = 'src'
+RELEASE_CREATOR = 'release_creator'
+RELEASE_DIR     = 'release'
 
 class Environment:
     WIN     = 'win32'
@@ -49,17 +50,14 @@ class Environment:
     
     @staticmethod
     def GetRootDir():
-        """
-        Python scripts are called form the /src directory.
-        """
         myDir = os.path.abspath(os.path.dirname(__file__))
         
         # Verify that we're running from the /src directory
         myDirName = os.path.split(myDir)[1]
-        if myDirName !=  PYTHON_SCRIPT_DIR:
-            raise
+        if myDirName !=  RELEASE_CREATOR:
+            raise Exception('File is not in /src/release_creator')
         
-        return os.path.abspath(os.path.join(myDir, '..'))
+        return os.path.abspath(os.path.join(myDir, '..', '..'))
     
     @staticmethod
     def GetAddonsDir():
@@ -80,7 +78,7 @@ class Environment:
         """
         Python scripts are stored in /src.
         """
-        return os.path.join(Environment.GetRootDir(), PYTHON_SCRIPT_DIR)
+        return os.path.join(Environment.GetRootDir(), SRC_DIR)
     
     @staticmethod
     def GetReleaseDir(addonId=None):
@@ -167,6 +165,11 @@ class TestEnvironment(unittest.TestCase):
     def test_addons_dir(self):
         self.assertNotEqual(Environment.GetAddonsDir(), '')
         self.assertTrue(os.path.exists(Environment.GetAddonsDir()))
+    
+    def test_addon_dir(self):
+        ADDON_ID = 'repository.libretro-linux64'
+        self.assertNotEqual(Environment.GetAddonDir(ADDON_ID), '')
+        self.assertTrue(os.path.exists(Environment.GetAddonDir(ADDON_ID)))
     
     def test_src_dir(self):
         self.assertNotEqual(Environment.GetSrcDir(), '')
