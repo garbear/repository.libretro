@@ -52,10 +52,10 @@ def CreateRelease():
     addons = []
     for dll in dlls:
         addon = Addon(dll)
-        if not addon.CreateRelease():
+        if addon.CreateRelease():
+            addons.append(addon)
+        else:
             print('Failed to create release archive for %s', addon.GetID())
-            continue
-        addons.append(addon)
     
     # Don't forget about the repository add-on!
     repositoryAddon = RepositoryAddon()
