@@ -1,0 +1,7 @@
+*.py[co]
+*.project
+*.pydevproject
+
+libretro-extract/build
+libretro-super
+

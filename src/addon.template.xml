@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="@id@"
+		name="@name@"
+		version="@version@"
+		provider-name="@authors@">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android="@library_android@"
+			library_linux="@library_linux@"
+			library_osx="@library_osx@"
+			library_windx="@library_win@"
+			library_wingl="@library_win@">
+		<platforms>@platforms@</platforms>
+		<extensions>@extensions@</extensions>
+		<supports_vfs>@supports_vfs@</supports_vfs>
+		<supports_no_game>@supports_no_game@</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">@core_name@ (@display_version@)</summary>
+		<description>@description@</description>
+		<license>@license@</license>
+		<platform>@platform@</platform>
+		<nofanart>@nofanart@</nofanart>
+		<noicon>@noicon@</noicon>
+		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
+		@broken@
+	</extension>
+</addon>

@@ -1,0 +1,202 @@
+libretroCore: 3dengine_libretro.dylib
+Library name:    Libretro 3DEngine
+supported_extensions = "png|jpg|mtl|obj"
+version = "v1"
+need_fullpath = "false"
+block_extract = "false"
+
+libretroCore: desmume_libretro.dylib
+Slot 2: NONE
+Microphone successfully inited.
+DeSmuME 0.9.9 svn x64-JIT
+SoftRast Initialized with cores=2
+Library name:    DeSmuME
+supported_extensions = "nds"
+version = "svn"
+need_fullpath = "true"
+block_extract = "false"
+
+libretroCore: dosbox_libretro.dylib
+supports_no_game = "true"
+Library name:    dosbox
+supported_extensions = "exe|com|bat|conf|EXE|COM|BAT|CONF"
+version = "svn"
+need_fullpath = "true"
+block_extract = "false"
+
+libretroCore: fb_alpha_libretro.dylib
+Library name:    FB Alpha
+supported_extensions = "iso|zip"
+version = "v0.2.97.30"
+need_fullpath = "true"
+block_extract = "true"
+
+libretroCore: fceumm_libretro.dylib
+Frontend supports RGB565 - will use that instead of XRGB1555.
+Library name:    FCEUmm
+supported_extensions = "fds|nes|unif"
+version = "(SVN)"
+need_fullpath = "true"
+block_extract = "false"
+
+libretroCore: gambatte_libretro.dylib
+Library name:    gambatte
+supported_extensions = "gb|gbc|dmg"
+version = "v0.5.0"
+need_fullpath = "false"
+block_extract = "false"
+
+libretroCore: handy_libretro.dylib
+Library name:    handy
+supported_extensions = "lnx"
+version = "0.95"
+need_fullpath = "true"
+block_extract = "false"
+
+libretroCore: instancingviewer_camera_libretro.dylib
+Library name:    InstancingViewer Camera GL
+supported_extensions = "png"
+version = "v2"
+need_fullpath = "false"
+block_extract = "false"
+
+libretroCore: instancingviewer_libretro.dylib
+Library name:    InstancingViewer GL
+supported_extensions = "png"
+version = "v3"
+need_fullpath = "false"
+block_extract = "false"
+
+libretroCore: mame_libretro.dylib
+Retro SYSTEM_DIRECTORY /Users/garrett/Documents/libretro-super/dist/osx
+Retro SAVE_DIRECTORY /Users/garrett/Documents/libretro-super/dist/osx
+Retro CONTENT_DIRECTORY /Users/garrett/Documents/libretro-super/dist/osx
+Library name:    MAME 2014
+supported_extensions = "zip|chd|7z"
+version = "Git"
+need_fullpath = "true"
+block_extract = "true"
+
+Retro DeInit
+libretroCore: mednafen_gba_libretro.dylib
+Library name:    Mednafen VBA-M
+supported_extensions = "gba"
+version = "v0.9.26"
+need_fullpath = "true"
+block_extract = "false"
+
+libretroCore: mednafen_ngp_libretro.dylib
+Library name:    Mednafen Neopop
+supported_extensions = "ngp|ngc"
+version = "v0.9.26"
+need_fullpath = "true"
+block_extract = "false"
+
+libretroCore: mednafen_pce_fast_libretro.dylib
+Library name:    Mednafen PCE Fast
+supported_extensions = "pce|sgx|cue"
+version = "v0.9.28"
+need_fullpath = "true"
+block_extract = "false"
+
+libretroCore: mednafen_psx_libretro.dylib
+Library name:    Mednafen PSX
+supported_extensions = "cue|toc|m3u|ccd"
+version = "v0.9.32"
+need_fullpath = "true"
+block_extract = "false"
+
+libretroCore: mednafen_vb_libretro.dylib
+Library name:    Mednafen VB
+supported_extensions = "vb|vboy|bin"
+version = "v0.9.26"
+need_fullpath = "true"
+block_extract = "false"
+
+libretroCore: mednafen_wswan_libretro.dylib
+Library name:    Mednafen WonderSwan
+supported_extensions = "ws|wsc"
+version = "v0.9.28"
+need_fullpath = "true"
+block_extract = "false"
+
+libretroCore: meteor_libretro.dylib
+Library name:    Meteor GBA
+supported_extensions = "gba"
+version = "v1.4"
+need_fullpath = "false"
+block_extract = "false"
+
+libretroCore: modelviewer_libretro.dylib
+Library name:    ModelViewer
+supported_extensions = "obj"
+version = "v1"
+need_fullpath = "true"
+block_extract = "false"
+
+libretroCore: modelviewer_location_libretro.dylib
+Library name:    ModelViewer Location
+supported_extensions = "obj"
+version = "v1"
+need_fullpath = "true"
+block_extract = "false"
+
+libretroCore: nestopia_libretro.dylib
+Library name:    Nestopia
+supported_extensions = "nes|fds"
+version = "v1.46-WIP"
+need_fullpath = "false"
+block_extract = "false"
+
+libretroCore: picodrive_libretro.dylib
+Library name:    PicoDrive
+supported_extensions = "bin|gen|smd|md|32x|cue|iso|sms"
+version = "1.91"
+need_fullpath = "true"
+block_extract = "false"
+
+libretroCore: quicknes_libretro.dylib
+Library name:    QuickNES
+supported_extensions = "nes"
+version = "v1"
+need_fullpath = "false"
+block_extract = "false"
+
+libretroCore: scenewalker_libretro.dylib
+Library name:    SceneWalker
+supported_extensions = "obj"
+version = "v1"
+need_fullpath = "true"
+block_extract = "false"
+
+libretroCore: scummvm_libretro.dylib
+supports_no_game = "true"
+Library name:    scummvm
+supported_extensions = "exe"
+version = "git"
+need_fullpath = "true"
+block_extract = "false"
+
+libretroCore: snes9x_libretro.dylib
+Sound buffer size: 2048 (512 samples)
+Library name:    SNES9x
+supported_extensions = "smc|sfc|swc|fig"
+version = "1.53"
+need_fullpath = "false"
+block_extract = "false"
+
+libretroCore: stella_libretro.dylib
+Library name:    Stella
+supported_extensions = "a26|bin"
+version = "3.4.1"
+need_fullpath = "false"
+block_extract = "false"
+
+libretroCore: tyrquake_libretro.dylib
+Library name:    TyrQuake
+supported_extensions = "pak"
+version = "v0.62"
+need_fullpath = "false"
+block_extract = "false"
+
+Program ended with exit code: 0
