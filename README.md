@@ -28,7 +28,7 @@ An installable add-on archive usually contains the following items:
 * changelog.txt (not yet generated - still a work-in-progress)
 * icon.png (optional, stored in /addons)
 * fanarat.jpb (optional, stored in /addons)
-* resources/ - folder for more generated XBMC stuff, like setting.xml and language files
+* resources/ - folder for more generated XBMC stuff, like settings.xml and language files
 * Possibly other XBMC stuff. I'm not an add-on expert
 
 Libretro cores might need other files like BIOSes or configuration scripts. These are stored in /addons. Currently, `create_release.py` ignores these extra files (as we don't have any yet).
@@ -42,6 +42,8 @@ libretro-extract
 libretro-extract is a C++ and CMake program that extracts information from compiled libretro cores. It loads the DLLs and queries information like the valid extensions, supported features and (in the future) settings. Much of the code is shared with the library.xmbc.libretro wrapper library.
 
 If a Readme is ever written for this program, you'll find it in the /libretro-extract folder.
+
+Here is what extracted settings looked like in the old repository.libretro system: https://github.com/garbear/repository.libretro-backup/commit/39ddf68
 
 TODO
 ----
