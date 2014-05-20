@@ -126,7 +126,7 @@ class Environment:
         
         os.chdir(path)
         
-        if Environment.GetPlatform() == 'win':
+        if Environment.GetPlatform() == Environment.WIN:
             proc = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
         else:
             proc = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -140,7 +140,7 @@ class Environment:
         if os.path.exists(dir):
             os.chdir(dir)
             
-            if Environment.GetPlatform() == 'win':
+            if Environment.GetPlatform() == Environment.WIN:
                 scriptName = os.path.split(script)[1]
                 subprocess.call(['C:\\Program Files (x86)\\Git\\bin\\sh.exe', '--login', scriptName]) # TODO
             else:
@@ -176,7 +176,7 @@ class TestEnvironment(unittest.TestCase):
         self.assertTrue(os.path.exists(Environment.GetSrcDir()))
     
     def test_release_dir(self):
-        self.assertNotEqual(Environment.GetReleaseDir(), '')
+        self.assertEqual(Environment.GetReleaseDir(), '')
         self.assertTrue(os.path.exists(Environment.GetReleaseDir()))
     
     def test_get_dll_extension(self):
