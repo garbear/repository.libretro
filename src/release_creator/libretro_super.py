@@ -206,7 +206,7 @@ class LibretroSuper:
                 dlls.append(dll)
                 print('Loaded dll %s (%s) from project %s' % (dll.GetID(), dll.GetInfo().GetDisplayVersion(), dll.GetProject().GetName()))
             else:
-                print('Failed to loaded dll %s (%s): can\'t find libretro-super project!' % (dll.GetID(), dll.GetInfo().GetDisplayVersion()))
+                print('Failed to loaded dll %s: can\'t find libretro-super project!' % (dll.GetID()))
         
         return dlls
     
