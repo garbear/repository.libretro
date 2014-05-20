@@ -28,16 +28,15 @@ import unittest
 
 LIBRETRO_SUPER_GIT     = 'git://github.com/libretro/libretro-super.git'
 LIBRETRO_SUPER_DIRNAME = 'libretro-super'
-PLATFORM_WIN           = 'win'
-PLATFORM_UNIX          = 'unix'
-PLATFORM_OSX           = 'osx'
-INFO_EXTENSION         = '.info'
 FETCH_CMD              = 'libretro-fetch.sh'
 BUILD_UNIX_CMD         = 'libretro-build.sh'
 BUILD_OSX_CMD          = 'libretro-build.sh'
 BUILD_WIN_CMD          = 'libretro-build-win.sh' 
 
 class LibretroSuper:
+    PLATFORM_WIN  = 'win'
+    PLATFORM_UNIX = 'unix' # Represents all linux distros
+    PLATFORM_OSX  = 'osx'
     """
     libretro-super is a buildsystem for generating RetroArch and its libretro cores.
     The buildsystem is cloned from LIBRETRO_SUPER_GIT. This class contains
@@ -51,14 +50,14 @@ class LibretroSuper:
     @staticmethod
     def GetPlatform():
         """
-        Libretro's build system has three platforms that we're currently concerned
-        about: 'win', 'osx' and 'unix'.
+        Libretro's build system has three platforms that we're currently
+        concerned about: Windows, Unix (all Linux distros) and OSX.
         """
-        if   Environment.GetPlatform() == Environment.WIN:         return 'win'
+        if   Environment.GetPlatform() == Environment.WIN:         return LibretroSuper.PLATFORM_WIN
         elif Environment.GetPlatform() == Environment.OSX32   or \
-             Environment.GetPlatform() == Environment.OSX32:       return 'osx'
+             Environment.GetPlatform() == Environment.OSX32:       return LibretroSuper.PLATFORM_OSX
         elif Environment.GetPlatform() == Environment.LINUX32 or \
-             Environment.GetPlatform() == Environment.LINUX64:     return 'unix' # Used for all linux platforms. Note: not 'linux'!
+             Environment.GetPlatform() == Environment.LINUX64:     return LibretroSuper.PLATFORM_UNIX
         raise Exception('Libretro-super doesn\'t support platform %s yet' % Environment.GetPlatform())
     
     @staticmethod
@@ -226,15 +225,36 @@ class LibretroSuper:
         if not self.IsValid():
             return False
         
-        if   LibretroSuper.GetPlatform() == 'win':  LibretroSuper.RunScript(BUILD_WIN_CMD)
-        elif LibretroSuper.GetPlatform() == 'unix': LibretroSuper.RunScript(BUILD_UNIX_CMD)
-        elif LibretroSuper.GetPlatform() == 'osx':  LibretroSuper.RunScript(BUILD_OSX_CMD)
+        if   LibretroSuper.GetPlatform() == LibretroSuper.PLATFORM_WIN:  LibretroSuper.RunScript(BUILD_WIN_CMD)
+        elif LibretroSuper.GetPlatform() == LibretroSuper.PLATFORM_UNIX: LibretroSuper.RunScript(BUILD_UNIX_CMD)
+        elif LibretroSuper.GetPlatform() == LibretroSuper.PLATFORM_OSX:  LibretroSuper.RunScript(BUILD_OSX_CMD)
         
         return True
 
 class TestLibretroSuper(unittest.TestCase):
     def setUp(self):
         pass
+    
+    def test_get_platform(self):
+        self.assertTrue(LibretroSuper.GetPlatform() in [LibretroSuper.PLATFORM_WIN,
+                                                        LibretroSuper.PLATFORM_UNIX,
+                                                        LibretroSuper.PLATFORM_OSX])
+    
+    def test_get_repo_dir(self):
+        self.assertNotEqual(LibretroSuper.GetRepoDir(), '')
+        self.assertTrue(os.path.exists(LibretroSuper.GetRepoDir()))
+    
+    def test_get_dll_dir(self):
+        self.assertNotEqual(LibretroSuper.GetDllDir(), '')
+        # DLL directory doesn't exist until libretro DLLs are built
+        #self.assertTrue(os.path.exists(LibretroSuper.GetDllDir()))
+    
+    def test_get_info_dir(self):
+        self.assertNotEqual(LibretroSuper.GetInfoDir(), '')
+        self.assertTrue(os.path.exists(LibretroSuper.GetInfoDir()))
+    
+    def test_run_script(self):
+        LibretroSuper.RunScript('libretro-config.sh')
     
     def test_libretro_super(self):
         libretro = LibretroSuper()
