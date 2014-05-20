@@ -181,17 +181,17 @@ class ReleaseArchive:
     
     def _WriteZipFile(self, zipPath, addonXmlText, changeLogText, iconPath, fanartPath, dllPath):
         # Shove everything into the zip file
-        with zipfile.ZipFile(zipPath, 'w', zipfile.ZIP_DEFLATED) as myzip:
-            myzip.writestr(os.path.join(self._id, AddonXml.GetFileName()), addonXmlText)
-            #myzip.writestr(os.path.join(self._id, ChangeLog.GetFileName()), changeLogText) # TODO: Uncomment once changelogs are implemented
-            myzip.write(dllPath, os.path.join(self._id, os.path.split(dllPath)[1]))
-            if iconPath:
-                myzip.write(iconPath, os.path.join(self._id, AddonXml.GetIconFileName()))
-            if fanartPath:
-                myzip.write(iconPath, os.path.join(self._id, AddonXml.GetFanartFileName()))
-            return True
+        myzip = zipfile.ZipFile(zipPath, 'w', zipfile.ZIP_DEFLATED)
         
-        return False
+        myzip.writestr(os.path.join(self._id, AddonXml.GetFileName()), addonXmlText)
+        #myzip.writestr(os.path.join(self._id, ChangeLog.GetFileName()), changeLogText) # TODO: Uncomment once changelogs are implemented
+        myzip.write(dllPath, os.path.join(self._id, os.path.split(dllPath)[1]))
+        if iconPath:
+            myzip.write(iconPath, os.path.join(self._id, AddonXml.GetIconFileName()))
+        if fanartPath:
+            myzip.write(iconPath, os.path.join(self._id, AddonXml.GetFanartFileName()))
+        
+        return True
 
 class TestReleaseArchive(unittest.TestCase):
     def setUp(self):
