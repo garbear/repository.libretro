@@ -21,7 +21,6 @@ from environment import Environment
 from md5_file import MD5File
 
 import os
-import re
 import unittest
 
 ADDONS_XML       = 'addons.xml'
