@@ -18,27 +18,29 @@
 # *
 
 from addon_version import AddonVersion
+from addon_xml import AddonXml
 from environment import Environment
 from md5_file import MD5File
+from release_archive import ReleaseArchive
 
 import os
 import shutil
 import unittest
 import zipfile
 
-REPO_ADDON_XML              = 'addon.xml' # Same as for game clients
-REPO_ICON_PNG               = 'icon.png'  # same as for game clients
-REPO_ARCHIVE_EXTENSION      = '.zip'      # Same as for release archives
-REPO_VERSIONED_ARCHIVE_NAME = '%s-%s' + REPO_ARCHIVE_EXTENSION # Same as for release archives
+REPO_ADDON_ID               = 'repository.libretro-%s'
 
 class RepositoryAddon:
     def __init__(self):
-        self._id = 'repository.libretro-' + Environment.GetPlatform()
+        self._id = REPO_ADDON_ID % Environment.GetPlatform()
+    
+    def GetID(self):
+        return self._id
     
     def GetAddonXmlText(self):
         addonXmlText = ''
         
-        addonXmlPath = os.path.join(Environment.GetAddonDir(self._id), REPO_ADDON_XML)
+        addonXmlPath = os.path.join(Environment.GetAddonDir(self._id), AddonXml.GetFileName())
         with open(addonXmlPath, 'r') as f:
             addonXmlText = f.read().strip()
         
@@ -53,20 +55,18 @@ class RepositoryAddon:
         
         version = AddonVersion('1.0.0') # TODO: Read from addon.xml
         
-        addonXmlPath = os.path.join(Environment.GetAddonDir(self._id), REPO_ADDON_XML)
-        iconPngPath  = os.path.join(Environment.GetAddonDir(self._id), REPO_ICON_PNG)
+        addonXmlPath = os.path.join(Environment.GetAddonDir(self._id), AddonXml.GetFileName())
+        iconPngPath  = os.path.join(Environment.GetAddonDir(self._id), AddonXml.GetIconFileName())
         
         if not os.path.exists(Environment.GetReleaseDir(self._id)):
             os.makedirs(Environment.GetReleaseDir(self._id))
         
         # Shove everything into the zip file
-        zipDir  = Environment.GetReleaseDir(self._id)
-        zipName = REPO_VERSIONED_ARCHIVE_NAME % (self._id, version.ToString())
-        zipPath = os.path.join(zipDir, zipName)
+        zipPath = ReleaseArchive.GetArchivePath(self._id, version)
         if not os.path.exists(zipPath):
-            with zipfile.ZipFile(zipPath, 'w', zipfile.ZIP_DEFLATED) as myzip:
-                myzip.write(addonXmlPath, os.path.join(self._id, REPO_ADDON_XML))
-                myzip.write(iconPngPath, os.path.join(self._id, REPO_ICON_PNG))
+            myzip = zipfile.ZipFile(zipPath, 'w', zipfile.ZIP_DEFLATED)
+            myzip.write(addonXmlPath, os.path.join(self._id, AddonXml.GetFileName()))
+            myzip.write(iconPngPath, os.path.join(self._id, AddonXml.GetIconFileName()))
             
             md5File = MD5File(zipPath)
             if not md5File.Save():
@@ -80,17 +80,23 @@ class RepositoryAddon:
             print('Archive %s is up to date' % os.path.split(zipPath)[1])
         
         if os.path.exists(iconPngPath):
-            shutil.copy2(iconPngPath, os.path.join(Environment.GetReleaseDir(self._id), REPO_ICON_PNG))
+            shutil.copy2(iconPngPath, os.path.join(Environment.GetReleaseDir(self._id), AddonXml.GetIconFileName()))
         
         return True
 
 class TestRepositoryAddon(unittest.TestCase):
     def setUp(self):
-        pass
+        repositoryAddon = RepositoryAddon()
+        archiveDir = Environment.GetReleaseDir(repositoryAddon.GetID())
+        if os.path.exists(archiveDir):
+            shutil.rmtree(archiveDir)
+        
+        self.assertTrue(not os.path.exists(archiveDir))
     
     def test_repository_addon(self):
         repositoryAddon = RepositoryAddon()
         self.assertNotEqual(repositoryAddon.GetAddonXmlText(), '')
+        self.assertTrue(repositoryAddon.CreateRelease())
         self.assertTrue(repositoryAddon.CreateRelease())
 
 if __name__ == '__main__':
