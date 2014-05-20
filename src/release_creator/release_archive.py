@@ -161,21 +161,22 @@ class ReleaseArchive:
         hasLibrary    = False
         
         if zipfile.is_zipfile(path):
-            with zipfile.ZipFile(path, 'r') as myzip:
-                for filepath in myzip.namelist():
-                    # Strip leading folder (assuming it is named addonId)
-                    filename = filepath[len(self._id) + 1 : ]
-                    
-                    if filename == AddonXml.GetFileName():
-                        addonXmlText  = myzip.read(filepath).strip()
-                    elif filename == ChangeLog.GetFileName():
-                        changeLogText = myzip.read(filepath).strip()
-                    elif filename == AddonXml.GetIconFileName():
-                        hasIcon = True
-                    elif filename == AddonXml.GetFanartFileName():
-                        hasFanart = True
-                    elif filename.endswith(Environment.GetDllExtension()):
-                        hasLibrary = True
+            myzip = zipfile.ZipFile(path, 'r')
+            
+            for filepath in myzip.namelist():
+                # Strip leading folder (assuming it is named addonId)
+                filename = filepath[len(self._id) + 1 : ]
+                
+                if filename == AddonXml.GetFileName():
+                    addonXmlText  = myzip.read(filepath).strip()
+                elif filename == ChangeLog.GetFileName():
+                    changeLogText = myzip.read(filepath).strip()
+                elif filename == AddonXml.GetIconFileName():
+                    hasIcon = True
+                elif filename == AddonXml.GetFanartFileName():
+                    hasFanart = True
+                elif filename.endswith(Environment.GetDllExtension()):
+                    hasLibrary = True
         
         return addonXmlText, changeLogText, hasIcon, hasFanart, hasLibrary
     
