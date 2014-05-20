@@ -24,7 +24,6 @@
 		<platform>@platform@</platform>
 		<nofanart>@nofanart@</nofanart>
 		<noicon>@noicon@</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		@broken@
 	</extension>
 </addon>
