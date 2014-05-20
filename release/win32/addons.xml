@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<addons>
+
+<addon id="gameclient.fceumm"
+		name="NES / Famicom (FCEUmm)"
+		version="1.0.0"
+		provider-name="CaH4e3|FCEU Team">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>Nintendo Entertainment System</platforms>
+		<extensions>fds|nes|unif</extensions>
+		<supports_vfs>false</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">FCEUmm ((SVN))</summary>
+		<description>Supported files: fds|nes|unif</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>false</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.gambatte"
+		name="Game Boy / Game Boy Color (Gambatte)"
+		version="0.5.0"
+		provider-name="Sinamas">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>Game Boy/Game Boy Color</platforms>
+		<extensions>gb|gbc|dmg</extensions>
+		<supports_vfs>true</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Gambatte (v0.5.0)</summary>
+		<description>Supported files: gb|gbc|dmg</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>false</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.genesis.plus.gx"
+		name="Sega MS/GG/MD/CD (Genesis Plus GX)"
+		version="1.7.4"
+		provider-name="Charles McDonald|Eke-Eke">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>Sega 8/16bit (Various)</platforms>
+		<extensions>mdx|md|smd|gen|bin|cue|iso|sms|gg|sg</extensions>
+		<supports_vfs>false</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Genesis Plus GX (v1.7.4)</summary>
+		<description>Supported files: mdx|md|smd|gen|bin|cue|iso|sms|gg|sg</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>false</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.mame078"
+		name="Arcade (MAME 2003)"
+		version="0.78.0"
+		provider-name="MAMEdev">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>Arcade (various)</platforms>
+		<extensions>zip</extensions>
+		<supports_vfs>false</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">MAME 2003 (0.78) (0.78)</summary>
+		<description>Supported files: zip</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>false</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.mednafen.gba"
+		name="Game Boy Advance (Mednafen VBA)"
+		version="0.9.33"
+		provider-name="Forgotten|Ryphecha">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>Game Boy Advance</platforms>
+		<extensions>gba|agb|bin</extensions>
+		<supports_vfs>false</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Mednafen VBA (v0.9.33.3)</summary>
+		<description>Supported files: gba|agb|bin</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>true</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.mednafen.ngp"
+		name="Neo Geo Pocket/Color (Mednafen Neopop)"
+		version="0.9.33"
+		provider-name="Libretro Team">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>Neo Geo Pocket (Color)</platforms>
+		<extensions>ngp|ngc</extensions>
+		<supports_vfs>false</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Mednafen Neopop (v0.9.33.3)</summary>
+		<description>Supported files: ngp|ngc</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>true</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.mednafen.pce.fast"
+		name="PC Engine/TurboGrafx-16 (Mednafen PCE Fast)"
+		version="0.9.33"
+		provider-name="Ryphecha">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>PC Engine/TurboGrafx-16</platforms>
+		<extensions>pce|sgx|cue|ccd</extensions>
+		<supports_vfs>false</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Mednafen PCE Fast (v0.9.33.3)</summary>
+		<description>Supported files: pce|sgx|cue|ccd</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>true</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.mednafen.pcfx"
+		name="PC-FX (Mednafen PC-FX)"
+		version="0.9.33"
+		provider-name="Ryphecha">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>PC-FX</platforms>
+		<extensions>cue|ccd</extensions>
+		<supports_vfs>false</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Mednafen PC-FX (v0.9.33.3)</summary>
+		<description>Supported files: cue|ccd</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>true</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.mednafen.vb"
+		name="Virtual Boy (Mednafen VB)"
+		version="0.9.33"
+		provider-name="Ryphecha">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>Virtual Boy</platforms>
+		<extensions>vb|vboy|bin</extensions>
+		<supports_vfs>false</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Mednafen VB (v0.9.33.3)</summary>
+		<description>Supported files: vb|vboy|bin</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>true</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.mednafen.wswan"
+		name="WonderSwan/Color (Mednafen Cygne)"
+		version="0.9.33"
+		provider-name="Libretro Team">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>WonderSwan/Color</platforms>
+		<extensions>ws|wsc</extensions>
+		<supports_vfs>false</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Mednafen WonderSwan (v0.9.33.3)</summary>
+		<description>Supported files: ws|wsc</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>false</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.nestopia"
+		name="NES / Famicom (NEStopia)"
+		version="1.46.0"
+		provider-name="Martin Freij">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>Nintendo Entertainment System</platforms>
+		<extensions>nes|fds</extensions>
+		<supports_vfs>true</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Nestopia (v1.46-WIP)</summary>
+		<description>Supported files: nes|fds</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>false</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.nxengine"
+		name="Cave Story (NXEngine)"
+		version="1.0.0"
+		provider-name="Caithlin Shaw">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>Cave Story game engine</platforms>
+		<extensions>exe</extensions>
+		<supports_vfs>false</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">NXEngine (1.0.0.4)</summary>
+		<description>Supported files: exe</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>false</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.prboom"
+		name="Doom (PrBoom)"
+		version="2.5.0"
+		provider-name="Libretro Team">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>DOOM game engine</platforms>
+		<extensions>wad|iwad</extensions>
+		<supports_vfs>true</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">PrBoom (v2.5.0)</summary>
+		<description>Supported files: wad|iwad</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>true</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.snes9x"
+		name="SNES / Super Famicom (SNES9x)"
+		version="1.53.0"
+		provider-name="SNES9x Team">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>Super Nintendo Entertainment System</platforms>
+		<extensions>smc|sfc|swc|fig</extensions>
+		<supports_vfs>true</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">SNES9x (1.53)</summary>
+		<description>Supported files: smc|sfc|swc|fig</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>false</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.snes9x.next"
+		name="SNES / Super Famicom (SNES9x Next)"
+		version="1.52.4"
+		provider-name="SNES9x Team|Squarepusher">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>Super Nintendo Entertainment System</platforms>
+		<extensions>smc|fig|sfc|gd3|gd7|dx2|bsx|swc</extensions>
+		<supports_vfs>true</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">SNES9x Next (v1.52.4)</summary>
+		<description>Supported files: smc|fig|sfc|gd3|gd7|dx2|bsx|swc</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>false</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.stella"
+		name="Atari 2600 (Stella)"
+		version="3.4.1"
+		provider-name="Libretro Team">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>Atari 2600</platforms>
+		<extensions>a26|bin</extensions>
+		<supports_vfs>true</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Stella (3.4.1)</summary>
+		<description>Supported files: a26|bin</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>true</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.tyrquake"
+		name="Quake 1 (TyrQuake)"
+		version="0.62.0"
+		provider-name="Libretro Team">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>Quake 1 game engine</platforms>
+		<extensions>pak</extensions>
+		<supports_vfs>true</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">TyrQuake (v0.62)</summary>
+		<description>Supported files: pak</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>true</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="gameclient.vba.next"
+		name="Game Boy Advance (VBA Next)"
+		version="1.0.2"
+		provider-name="Forgotten|VBA-M Team|Squarepusher">
+	<requires>
+		<import addon="library.xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux=""
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms>Game Boy Advance</platforms>
+		<extensions>gba</extensions>
+		<supports_vfs>false</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">VBA Next (v1.0.2)</summary>
+		<description>Supported files: gba</description>
+		<license></license>
+		<platform></platform>
+		<nofanart>true</nofanart>
+		<noicon>false</noicon>
+		
+	</extension>
+</addon>
+
+<addon id="repository.libretro-win32"
+        name="Libretro Emulators"
+        version="1.0.0"
+        provider-name="garbear">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+        <import addon="library.xbmc.libretro" version="1.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Libretro Emulators">
+        <info compressed="false">https://raw.github.com/garbear/repository.libretro/master/release/win32/addons.xml</info>
+        <checksum>https://raw.github.com/garbear/repository.libretro/master/release/win32/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.github.com/garbear/repository.libretro/master/release/win32/</datadir>
+        <hashes>true</hashes>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Libretro Emulators for Win32</summary>
+        <description>This repository contains emulators for the RetroPlayer branch of XBMC.</description>
+        <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers. Team XBMC did not make all the add-ons on this repository and are not responsible for their content.</disclaimer>
+        <platform>windx wingl</platform>
+        <nofanart>true</nofanart>
+    </extension>
+</addon>
+
+</addons>
