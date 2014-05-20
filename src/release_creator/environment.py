@@ -22,10 +22,10 @@ import platform
 import subprocess
 import unittest
 
-ADDONS_DIR      = 'addons'
-SRC_DIR         = 'src'
-RELEASE_CREATOR = 'release_creator'
-RELEASE_DIR     = 'release'
+ADDONS_DIR          = 'addons'
+SRC_DIR             = 'src'
+RELEASE_CREATOR_DIR = 'release_creator'
+RELEASE_DIR         = 'release'
 
 class Environment:
     WIN     = 'win32'
@@ -54,8 +54,8 @@ class Environment:
         
         # Verify that we're running from the /src directory
         myDirName = os.path.split(myDir)[1]
-        if myDirName !=  RELEASE_CREATOR:
-            raise Exception('File is not in /src/release_creator')
+        if myDirName !=  RELEASE_CREATOR_DIR:
+            raise Exception('File is not in /' + SRC_DIR + '/' + RELEASE_CREATOR_DIR)
         
         return os.path.abspath(os.path.join(myDir, '..', '..'))
     
@@ -176,7 +176,7 @@ class TestEnvironment(unittest.TestCase):
         self.assertTrue(os.path.exists(Environment.GetSrcDir()))
     
     def test_release_dir(self):
-        self.assertEqual(Environment.GetReleaseDir(), '')
+        self.assertNotEqual(Environment.GetReleaseDir(), '')
         self.assertTrue(os.path.exists(Environment.GetReleaseDir()))
     
     def test_get_dll_extension(self):
