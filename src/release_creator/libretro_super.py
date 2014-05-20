@@ -122,9 +122,9 @@ class LibretroSuper:
     
     def CloneIfNotValid(self):
         if not self.IsValid():
-            if os.path.exists(self._repoDir):
+            if os.path.exists(LibretroSuper.GetRepoDir()):
                 return False # TODO: Path exists but isn't a git repository?
-            subprocess.call(['git', 'clone', LIBRETRO_SUPER_GIT, self._repoDir])
+            subprocess.call(['git', 'clone', LIBRETRO_SUPER_GIT, LibretroSuper.GetRepoDir()])
             self._InitalizeVariables()
         return self.IsValid()
     
