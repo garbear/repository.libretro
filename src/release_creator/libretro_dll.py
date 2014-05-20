@@ -18,15 +18,12 @@
 # *
 
 from addon_xml import AddonXml
-from environment import Environment
 from libretro_info import LibretroInfo
-from utils import getClosestMatch
 
 import os
 import unittest
 
 LIBRETRO_SUFFIX = '_libretro'
-DLL_SUFFIX      = LIBRETRO_SUFFIX + Environment.GetDllExtension()
 INFO_SUFFIX     = LIBRETRO_SUFFIX + LibretroInfo.GetInfoExtension()
 GAMECLIENT_ID   = 'gameclient.%s'
 
@@ -38,17 +35,10 @@ class LibretroDll:
         self._path = path
         
         # Name is the filename before LIBRETRO_SUFFIX 
-        self._name = ''
         filename = os.path.split(path)[1]
-        if filename.endswith(DLL_SUFFIX):
-            # Strip DLL_SUFFIX from filename
-            self._name = filename[ : -len(DLL_SUFFIX)]
+        self._name = filename.split(LIBRETRO_SUFFIX)[0]
         
-        self._info = None
-        infoNames = Environment.GetFilesBySuffix(libretroSuper.GetInfoDir(), INFO_SUFFIX)
-        infoName = getClosestMatch(self._name, infoNames)
-        if infoName:
-            self._info = LibretroInfo(os.path.join(libretroSuper.GetInfoDir(), infoName + INFO_SUFFIX))
+        self._info = LibretroInfo(os.path.join(libretroSuper.GetInfoDir(), self._name + INFO_SUFFIX))
         
         self._project = libretroSuper.GetProject(self._name)
     

@@ -30,6 +30,7 @@ import unittest
 # evident that a much better system is in need. 
 DLL_TO_PROJECT = {
     'nxengine': 'nx',
+    'snes9x':   's9x',
 }
 
 # Use fuzzy string matching to decide which libretro project the compiled DLL
@@ -57,12 +58,16 @@ class TestLibretroUtils(unittest.TestCase):
         pass
     
     def test_get_closest_match(self):
+        needle = 'bsnes'
+        haystack = ['bsnes', 's9x', 's9x-next']
+        self.assertEqual(getClosestMatch(needle, haystack), haystack[0])
+        
         needle = 'snes9x'
-        haystack = ['bsnes', 'snes9x', 'snes9x-next']
+        haystack = ['bsnes', 's9x', 's9x-next']
         self.assertEqual(getClosestMatch(needle, haystack), haystack[1])
         
         needle = 'snes9x_next'
-        haystack = ['bsnes', 'snes9x', 'snes9x-next']
+        haystack = ['bsnes', 's9x', 's9x-next']
         self.assertEqual(getClosestMatch(needle, haystack), haystack[2])
         
         needle = 'nxengine'
