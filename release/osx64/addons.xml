@@ -1093,7 +1093,7 @@
         <summary>Libretro Emulators for 64-bit systems</summary>
         <description>This repository contains emulators for the RetroPlayer branch of XBMC.</description>
         <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers. Team XBMC did not make all the add-ons on this repository and are not responsible for their content.</disclaimer>
-        <platform>linux</platform>
+        <platform>osx64</platform>
         <nofanart>true</nofanart>
     </extension>
 </addon>
