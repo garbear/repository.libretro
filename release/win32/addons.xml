@@ -13,8 +13,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="fceumm_libretro_win.dll"
+			library_wingl="fceumm_libretro_win.dll">
 		<platforms>Nintendo Entertainment System</platforms>
 		<extensions>fds|nes|unif</extensions>
 		<supports_vfs>false</supports_vfs>
@@ -42,8 +42,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="gambatte_libretro_win.dll"
+			library_wingl="gambatte_libretro_win.dll">
 		<platforms>Game Boy/Game Boy Color</platforms>
 		<extensions>gb|gbc|dmg</extensions>
 		<supports_vfs>true</supports_vfs>
@@ -71,8 +71,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="genesis_plus_gx_libretro_win.dll"
+			library_wingl="genesis_plus_gx_libretro_win.dll">
 		<platforms>Sega 8/16bit (Various)</platforms>
 		<extensions>mdx|md|smd|gen|bin|cue|iso|sms|gg|sg</extensions>
 		<supports_vfs>false</supports_vfs>
@@ -100,8 +100,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="mame078_libretro_win.dll"
+			library_wingl="mame078_libretro_win.dll">
 		<platforms>Arcade (various)</platforms>
 		<extensions>zip</extensions>
 		<supports_vfs>false</supports_vfs>
@@ -129,8 +129,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="mednafen_gba_libretro_win.dll"
+			library_wingl="mednafen_gba_libretro_win.dll">
 		<platforms>Game Boy Advance</platforms>
 		<extensions>gba|agb|bin</extensions>
 		<supports_vfs>false</supports_vfs>
@@ -158,8 +158,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="mednafen_ngp_libretro_win.dll"
+			library_wingl="mednafen_ngp_libretro_win.dll">
 		<platforms>Neo Geo Pocket (Color)</platforms>
 		<extensions>ngp|ngc</extensions>
 		<supports_vfs>false</supports_vfs>
@@ -187,8 +187,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="mednafen_pce_fast_libretro_win.dll"
+			library_wingl="mednafen_pce_fast_libretro_win.dll">
 		<platforms>PC Engine/TurboGrafx-16</platforms>
 		<extensions>pce|sgx|cue|ccd</extensions>
 		<supports_vfs>false</supports_vfs>
@@ -216,8 +216,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="mednafen_pcfx_libretro_win.dll"
+			library_wingl="mednafen_pcfx_libretro_win.dll">
 		<platforms>PC-FX</platforms>
 		<extensions>cue|ccd</extensions>
 		<supports_vfs>false</supports_vfs>
@@ -245,8 +245,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="mednafen_vb_libretro_win.dll"
+			library_wingl="mednafen_vb_libretro_win.dll">
 		<platforms>Virtual Boy</platforms>
 		<extensions>vb|vboy|bin</extensions>
 		<supports_vfs>false</supports_vfs>
@@ -274,8 +274,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="mednafen_wswan_libretro_win.dll"
+			library_wingl="mednafen_wswan_libretro_win.dll">
 		<platforms>WonderSwan/Color</platforms>
 		<extensions>ws|wsc</extensions>
 		<supports_vfs>false</supports_vfs>
@@ -303,8 +303,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="nestopia_libretro_win.dll"
+			library_wingl="nestopia_libretro_win.dll">
 		<platforms>Nintendo Entertainment System</platforms>
 		<extensions>nes|fds</extensions>
 		<supports_vfs>true</supports_vfs>
@@ -332,8 +332,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="nxengine_libretro_win.dll"
+			library_wingl="nxengine_libretro_win.dll">
 		<platforms>Cave Story game engine</platforms>
 		<extensions>exe</extensions>
 		<supports_vfs>false</supports_vfs>
@@ -361,8 +361,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="prboom_libretro_win.dll"
+			library_wingl="prboom_libretro_win.dll">
 		<platforms>DOOM game engine</platforms>
 		<extensions>wad|iwad</extensions>
 		<supports_vfs>true</supports_vfs>
@@ -390,8 +390,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="snes9x_libretro_win.dll"
+			library_wingl="snes9x_libretro_win.dll">
 		<platforms>Super Nintendo Entertainment System</platforms>
 		<extensions>smc|sfc|swc|fig</extensions>
 		<supports_vfs>true</supports_vfs>
@@ -419,8 +419,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="snes9x_next_libretro_win.dll"
+			library_wingl="snes9x_next_libretro_win.dll">
 		<platforms>Super Nintendo Entertainment System</platforms>
 		<extensions>smc|fig|sfc|gd3|gd7|dx2|bsx|swc</extensions>
 		<supports_vfs>true</supports_vfs>
@@ -448,8 +448,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="stella_libretro_win.dll"
+			library_wingl="stella_libretro_win.dll">
 		<platforms>Atari 2600</platforms>
 		<extensions>a26|bin</extensions>
 		<supports_vfs>true</supports_vfs>
@@ -477,8 +477,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="tyrquake_libretro_win.dll"
+			library_wingl="tyrquake_libretro_win.dll">
 		<platforms>Quake 1 game engine</platforms>
 		<extensions>pak</extensions>
 		<supports_vfs>true</supports_vfs>
@@ -506,8 +506,8 @@
 			library_android=""
 			library_linux=""
 			library_osx=""
-			library_windx=""
-			library_wingl="">
+			library_windx="vba_next_libretro_win.dll"
+			library_wingl="vba_next_libretro_win.dll">
 		<platforms>Game Boy Advance</platforms>
 		<extensions>gba</extensions>
 		<supports_vfs>false</supports_vfs>
