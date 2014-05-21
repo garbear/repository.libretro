@@ -55,7 +55,7 @@ class LibretroSuper:
         """
         if   Environment.GetPlatform() == Environment.WIN:         return LibretroSuper.PLATFORM_WIN
         elif Environment.GetPlatform() == Environment.OSX32   or \
-             Environment.GetPlatform() == Environment.OSX32:       return LibretroSuper.PLATFORM_OSX
+             Environment.GetPlatform() == Environment.OSX64:       return LibretroSuper.PLATFORM_OSX
         elif Environment.GetPlatform() == Environment.LINUX32 or \
              Environment.GetPlatform() == Environment.LINUX64:     return LibretroSuper.PLATFORM_UNIX
         raise Exception('Libretro-super doesn\'t support platform %s yet' % Environment.GetPlatform())
