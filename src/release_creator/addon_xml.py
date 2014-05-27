@@ -152,7 +152,7 @@ class AddonXml:
         elif prop == 'authors':          value = self._info.GetAuthors() if self._info.GetAuthors() else LIBRETRO_PROVIDER
         elif prop == 'description':      value = self._GetDescription()
         elif prop == 'library_android':  value = self._GetLibraryPath(Environment.ANDROID)
-        elif prop == 'library_linux':    value = self._GetLibraryPath(Environment.LINUX64)
+        elif prop == 'library_linux':    value = self._GetLibraryPath(Environment.LINUX64, Environment.LINUX32)
         elif prop == 'library_osx':      value = self._GetLibraryPath(Environment.OSX64)
         elif prop == 'library_win':      value = self._GetLibraryPath(Environment.WIN)
         elif prop == 'platforms':        value = self._info.GetSystemName()
@@ -177,12 +177,13 @@ class AddonXml:
         
         return description
     
-    def _GetLibraryPath(self, platform):
+    def _GetLibraryPath(self, platform, backupPlatform=''):
         """
-        Returns the library path if platform matches the current library, or an
-        empty string otherwise.
+        Returns the library path if platform or backupPlatform matches the
+        current library, or an empty string otherwise.
         """
-        if platform == Environment.GetPlatform():
+        if platform == Environment.GetPlatform() or \
+          (backupPlatform and backupPlatform == Environment.GetPlatform()):
             return os.path.split(self._libraryPath)[1]
         return ''
 
