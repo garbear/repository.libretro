@@ -22,6 +22,7 @@
 #include "ClientBridge.h"
 #include "libretro.h"
 #include "LibretroDLL.h"
+#include "LibretroSettings.h"
 
 #include <iostream>
 #include <stdarg.h>
@@ -173,15 +174,17 @@ bool CLibretroEnvironment::EnvironmentCallback(unsigned int cmd, void* data)
       const retro_variable* typedData = reinterpret_cast<const retro_variable*>(data);
       if (typedData)
       {
-        /*
-        printf("RETRO_ENVIRONMENT_SET_VARIABLES\n");
-        char valueBuffer[1024];
+        //cout << "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" << endl;
+        //cout << "<settings>" << endl;
+        //cout << "\t<category label=\"32001\">" << endl;
+
+        vector<retro_variable> variables;
         for (const retro_variable* variable = typedData; variable->key && variable->value; variable++)
-        {
-          printf("Key: %s\n", variable->key);
-          printf("Value: %s\n", variable->value);
-        }
-         */
+          variables.push_back(*variable);
+
+        CLibretroSettings settings(variables);
+        settings.PrintSettings();
+        settings.PrintLanguage();
       }
       break;
     }

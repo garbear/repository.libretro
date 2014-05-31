@@ -5,6 +5,8 @@ set(SRCS
 	ClientBridge.cpp
 	LibretroDLL.cpp
 	LibretroEnvironment.cpp
+	LibretroSettings.cpp
+	LibretroString.cpp
 	main.cpp
 )
 
