@@ -30,7 +30,7 @@ namespace LIBRETRO
   class CLibretroSettings
   {
   public:
-    CLibretroSettings(const std::vector<retro_variable>& variables);
+    CLibretroSettings(const std::string& strAddonDir, const std::vector<retro_variable>& variables);
     ~CLibretroSettings();
     
     void PrintSettings();
@@ -46,6 +46,7 @@ namespace LIBRETRO
       std::vector<std::string> vecValues;
     };
 
+    std::string                  m_strAddonDir;
     std::string                  m_strCategoryTitle;
     std::vector<LibretroSetting> m_settings;
   };

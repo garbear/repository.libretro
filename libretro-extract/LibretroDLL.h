@@ -37,6 +37,7 @@ namespace LIBRETRO
     void Unload(void);
     bool Load(const game_client_properties& gameClientProps);
 
+    const std::string& GetID() const { return m_strId; }
     const std::string& GetLibraryDirectory() const { return m_strLibraryDirectory; }
     const std::string& GetSystemDirectory() const { return m_strSystemDirectory; }
     const std::string& GetContentDirectory() const { return m_strContentDirectory; }
@@ -70,6 +71,7 @@ namespace LIBRETRO
 
   private:
     void*                         m_libretroClient;
+    std::string                   m_strId;
     std::string                   m_strLibraryDirectory;
     std::string                   m_strSystemDirectory;
     std::string                   m_strContentDirectory;

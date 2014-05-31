@@ -35,7 +35,7 @@ namespace LIBRETRO
 
     static void Reset();
 
-    static void PrintLanguage();
+    static void PrintLanguage(const std::string& strAddonDir);
 
   private:
     unsigned int m_id;

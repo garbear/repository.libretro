@@ -21,16 +21,22 @@
 #include "LibretroSettings.h"
 #include "libretro.h"
 
-#include <iostream>
+#include <dirent.h>
+#include <fstream>
 #include <string>
+#include <sys/stat.h>
 
 using namespace LIBRETRO;
 using namespace std;
 
 #define CATEGORY_TITLE  "Settings"
 
-CLibretroSettings::CLibretroSettings(const vector<retro_variable>& variables)
- : m_strCategoryTitle(CATEGORY_TITLE)
+#define RESOURCES_DIR  "resources"
+#define SETTINGS_FILE  "settings.xml"
+
+CLibretroSettings::CLibretroSettings(const string& strAddonDir, const vector<retro_variable>& variables)
+ : m_strAddonDir(strAddonDir),
+   m_strCategoryTitle(CATEGORY_TITLE)
 {
   for (vector<retro_variable>::const_iterator it = variables.begin(); it != variables.end(); ++it)
   {
@@ -77,30 +83,41 @@ CLibretroSettings::~CLibretroSettings()
 
 void CLibretroSettings::PrintSettings()
 {
-  cout << "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" << endl;
-  cout << "<settings>" << endl;
-  cout << "\t<category label=\"" << CLibretroString(m_strCategoryTitle).GetID() << "\">" << endl;
+  const mode_t mode = S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH;
+  mkdir(m_strAddonDir.c_str(), mode);
+  mkdir((m_strAddonDir + "/" RESOURCES_DIR).c_str(), mode);
+  string strFilePath = m_strAddonDir + "/" RESOURCES_DIR "/" SETTINGS_FILE;
+
+  fstream file;
+  file.open(strFilePath.c_str(), ios::out);
+
+  if (!file.is_open())
+    return;
+
+  file << "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" << endl;
+  file << "<settings>" << endl;
+  file << "\t<category label=\"" << CLibretroString(m_strCategoryTitle).GetID() << "\">" << endl;
 
   for (vector<LibretroSetting>::iterator it = m_settings.begin(); it != m_settings.end(); ++it)
   {
-    cout << "\t\t<setting label=\"" << CLibretroString(it->strName).GetID() << "\" type=\"labelenum\" id=\"" << it->strId << "\" values=\"";
+    file << "\t\t<setting label=\"" << CLibretroString(it->strName).GetID() << "\" type=\"labelenum\" id=\"" << it->strId << "\" values=\"";
     for (vector<string>::const_iterator it2 = it->vecValues.begin(); it2 != it->vecValues.end(); ++it2)
     {
       if (it2 != it->vecValues.begin())
-        cout << "|";
-      cout << *it2;
+        file << "|";
+      file << *it2;
     }
-    cout << "\"/>" << endl;
+    file << "\"/>" << endl;
   }
 
-  cout << "\t</category>" << endl;
-  cout << "</settings>" << endl;
-  cout << endl;
+  file << "\t</category>" << endl;
+  file << "</settings>" << endl;
+  file << endl;
 }
 
 void CLibretroSettings::PrintLanguage()
 {
-  CLibretroString::PrintLanguage();
+  CLibretroString::PrintLanguage(m_strAddonDir);
 }
 
 string CLibretroSettings::Trim(const string& str)

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="30000">
+		<setting label="30001" type="labelenum" id="psx_dithering" values="enabled|disabled"/>
+		<setting label="30002" type="labelenum" id="psx_enable_analog_toggle" values="disabled|enabled"/>
+		<setting label="30003" type="labelenum" id="psx_enable_multitap_port1" values="disabled|enabled"/>
+		<setting label="30004" type="labelenum" id="psx_enable_multitap_port2" values="disabled|enabled"/>
+	</category>
+</settings>
+

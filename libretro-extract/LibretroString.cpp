@@ -22,12 +22,19 @@
 
 #include <algorithm>
 #include <assert.h>
-#include <iostream>
+#include <dirent.h>
+#include <fstream>
+#include <sys/stat.h>
 
 using namespace LIBRETRO;
 using namespace std;
 
 #define XBMC_STRING_START  30000
+
+#define RESOURCES_DIR  "resources"
+#define LANGUAGES_DIR  "languages"
+#define ENGLISH_DIR    "english"
+#define STRINGS_FILE   "strings.po"
 
 vector<string> CLibretroString::m_strings;
 
@@ -50,33 +57,45 @@ void CLibretroString::Reset()
   m_strings.clear();
 }
 
-void CLibretroString::PrintLanguage()
+void CLibretroString::PrintLanguage(const string& strAddonDir)
 {
-  cout << "# XBMC Media Center language file" << endl;
-  cout << "# Addon Name: @name@" << endl;
-  cout << "# Addon id: @id@" << endl;
-  cout << "# Addon Provider: @authors@" << endl;
-  cout << "msgid \"\"" << endl;
-  cout << "msgstr \"\"" << endl;
-  cout << "\"Project-Id-Version: Libretro Clients\\n\"" << endl;
-  cout << "\"Report-Msgid-Bugs-To: alanwww1@xbmc.org\\n\"" << endl;
-  cout << "\"POT-Creation-Date: 2014-05-30 17:00+8\\n\"" << endl;
-  cout << "\"PO-Revision-Date: 2014-05-30 17:00+8\\n\"" << endl;
-  cout << "\"Last-Translator: XBMC Translation Team\\n\"" << endl;
-  cout << "\"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\\n\"" << endl;
-  cout << "\"MIME-Version: 1.0\\n\"" << endl;
-  cout << "\"Content-Type: text/plain; charset=UTF-8\\n\"" << endl;
-  cout << "\"Content-Transfer-Encoding: 8bit\\n\"" << endl;
-  cout << "\"Language: en\\n\"" << endl;
-  cout << "\"Plural-Forms: nplurals=2; plural=(n != 1);\\n\"" << endl;
-  cout << endl;
+  const mode_t mode = S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH;
+  mkdir(strAddonDir.c_str(), mode);
+  mkdir((strAddonDir + "/" RESOURCES_DIR).c_str(), mode);
+  mkdir((strAddonDir + "/" RESOURCES_DIR "/" LANGUAGES_DIR).c_str(), mode);
+  mkdir((strAddonDir + "/" RESOURCES_DIR "/" LANGUAGES_DIR "/" ENGLISH_DIR).c_str(), mode);
+  string strFilePath = strAddonDir + "/" RESOURCES_DIR "/" LANGUAGES_DIR "/" ENGLISH_DIR "/" STRINGS_FILE;
+
+  fstream file;
+  file.open(strFilePath.c_str(), ios::out);
+
+  if (!file.is_open())
+    return;
+
+  file << "# XBMC Media Center language file" << endl;
+  file << "# Addon Name: @name@" << endl;
+  file << "# Addon id: @id@" << endl;
+  file << "# Addon Provider: @authors@" << endl;
+  file << "msgid \"\"" << endl;
+  file << "msgstr \"\"" << endl;
+  file << "\"Project-Id-Version: Libretro Clients\\n\"" << endl;
+  file << "\"Report-Msgid-Bugs-To: alanwww1@xbmc.org\\n\"" << endl;
+  file << "\"POT-Creation-Date: 2014-05-30 17:00+8\\n\"" << endl;
+  file << "\"PO-Revision-Date: 2014-05-30 17:00+8\\n\"" << endl;
+  file << "\"Last-Translator: XBMC Translation Team\\n\"" << endl;
+  file << "\"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\\n\"" << endl;
+  file << "\"MIME-Version: 1.0\\n\"" << endl;
+  file << "\"Content-Type: text/plain; charset=UTF-8\\n\"" << endl;
+  file << "\"Content-Transfer-Encoding: 8bit\\n\"" << endl;
+  file << "\"Language: en\\n\"" << endl;
+  file << "\"Plural-Forms: nplurals=2; plural=(n != 1);\\n\"" << endl;
 
   for (vector<string>::const_iterator it = m_strings.begin(); it != m_strings.end(); ++it)
   {
     const unsigned int id = XBMC_STRING_START + (it - m_strings.begin());
-    cout << "msgctxt \"#" << id << "\"" << endl;
-    cout << "msgid \"" << *it << "\"" << endl;
-    cout << "msgstr \"\"" << endl;
-    cout << endl;
+    file << endl;
+    file << "msgctxt \"#" << id << "\"" << endl;
+    file << "msgid \"" << *it << "\"" << endl;
+    file << "msgstr \"\"" << endl;
   }
 }

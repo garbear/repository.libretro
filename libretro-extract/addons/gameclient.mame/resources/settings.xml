@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="30000">
+		<setting label="30001" type="labelenum" id="core_current_mouse_enable" values="disabled|enabled"/>
+		<setting label="30002" type="labelenum" id="core_current_nagscreenpatch_enable" values="disabled|enabled"/>
+		<setting label="30003" type="labelenum" id="core_current_videoapproach1_enable" values="disabled|enabled"/>
+		<setting label="30004" type="labelenum" id="core_boot_osd" values="disabled|enabled"/>
+		<setting label="30005" type="labelenum" id="core_exp_commandline" values="disabled|enabled"/>
+	</category>
+</settings>
+

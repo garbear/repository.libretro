@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="30000">
+		<setting label="30001" type="labelenum" id="picodrive_input1" values="3 button pad|6 button pad|None"/>
+		<setting label="30002" type="labelenum" id="picodrive_input2" values="3 button pad|6 button pad|None"/>
+		<setting label="30003" type="labelenum" id="picodrive_sprlim" values="disabled|enabled"/>
+		<setting label="30004" type="labelenum" id="picodrive_ramcart" values="disabled|enabled"/>
+	</category>
+</settings>
+

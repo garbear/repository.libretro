@@ -33,6 +33,9 @@
 using namespace LIBRETRO;
 using namespace std;
 
+#define ADDON_ID_TYPE    "gameclient."
+#define LIBRETRO_SUFFIX  "_libretro"
+
 CLibretroDLL::CLibretroDLL()
  : m_libretroClient(NULL)
 {
@@ -46,6 +49,7 @@ void CLibretroDLL::Unload(void)
     m_libretroClient = NULL;
   }
 
+  m_strId.clear();
   m_strLibraryDirectory.clear();
   m_strSystemDirectory.clear();
   m_strContentDirectory.clear();
@@ -62,6 +66,53 @@ string GetDirectory(const string& path)
     return path.substr(0, pos);
   }
   return "";
+}
+
+// Get filename part of path, or entire path if path doesn't contain any directory separators
+string GetFilename(const string& path)
+{
+  size_t pos = path.find_last_of("/\\");
+  if (pos == string::npos)
+    return path;
+  else
+    return path.substr(pos + 1);
+}
+
+// If filename contains ".", the "." and trailing extension will be removed
+string RemoveExtension(const string& filename)
+{
+  size_t pos = filename.find_last_of(".");
+  if (pos == string::npos)
+    return filename;
+  else
+    return filename.substr(0, pos);
+}
+
+// If libraryName ends in "_libretro", the "_libretro" part will be stripped
+string RemoveLibretroSuffix(const string& libraryName)
+{
+  // TODO: Also check if string ends in "_libretro"
+  if (libraryName.length() < strlen(LIBRETRO_SUFFIX))
+    return libraryName;
+  else
+    return libraryName.substr(0, libraryName.length() - strlen(LIBRETRO_SUFFIX));
+}
+
+// Replace "_" with "."
+string ReplaceUnderscoreWithPeriod(const string& str)
+{
+  string strCopy(str);
+  for (string::iterator it = strCopy.begin(); it != strCopy.end(); ++it)
+  {
+    if (*it == '_')
+      *it = '.';
+  }
+  return strCopy;
+}
+
+string PrependAddonType(const string& baseId)
+{
+  return ADDON_ID_TYPE + baseId;
 }
 
 // Convert functionPtr to a string literal
@@ -129,6 +180,17 @@ bool CLibretroDLL::Load(const game_client_properties& gameClientProps)
     printf("Unable to assign function %s", dlerror());
     return bSuccess;
   }
+
+  /*
+   * ID is determined from dll name. Remove the trailing "_libretro" and
+   * extension, convert "_" to "." and prefix with "gameclient.", e.g:
+   * bsnes_accuracy_libretro.dylib -> gameclient.bsnes.accuracy
+   */
+  m_strId = PrependAddonType(
+            ReplaceUnderscoreWithPeriod(
+            RemoveLibretroSuffix(
+            RemoveExtension(
+            GetFilename(gameClientProps.library_path)))));
 
   m_strLibraryDirectory = GetDirectory(gameClientProps.library_path);
   m_strSystemDirectory  = gameClientProps.system_directory;

@@ -1,0 +1,81 @@
+# XBMC Media Center language file
+# Addon Name: @name@
+# Addon id: @id@
+# Addon Provider: @authors@
+msgid ""
+msgstr ""
+"Project-Id-Version: Libretro Clients\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2014-05-30 17:00+8\n"
+"PO-Revision-Date: 2014-05-30 17:00+8\n"
+"Last-Translator: XBMC Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "Settings"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Show layer 1"
+msgstr ""
+
+msgctxt "#30002"
+msgid "Show layer 2"
+msgstr ""
+
+msgctxt "#30003"
+msgid "Show layer 3"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Show layer 4"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Show sprite layer"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Enable graphic clip windows"
+msgstr ""
+
+msgctxt "#30007"
+msgid "Enable transparency effects"
+msgstr ""
+
+msgctxt "#30008"
+msgid "Enable sound channel 1"
+msgstr ""
+
+msgctxt "#30009"
+msgid "Enable sound channel 2"
+msgstr ""
+
+msgctxt "#30010"
+msgid "Enable sound channel 3"
+msgstr ""
+
+msgctxt "#30011"
+msgid "Enable sound channel 4"
+msgstr ""
+
+msgctxt "#30012"
+msgid "Enable sound channel 5"
+msgstr ""
+
+msgctxt "#30013"
+msgid "Enable sound channel 6"
+msgstr ""
+
+msgctxt "#30014"
+msgid "Enable sound channel 7"
+msgstr ""
+
+msgctxt "#30015"
+msgid "Enable sound channel 8"
+msgstr ""

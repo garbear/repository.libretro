@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="30000">
+		<setting label="30001" type="labelenum" id="s9x_layer_1" values="Yes|No"/>
+		<setting label="30002" type="labelenum" id="s9x_layer_2" values="Yes|No"/>
+		<setting label="30003" type="labelenum" id="s9x_layer_3" values="Yes|No"/>
+		<setting label="30004" type="labelenum" id="s9x_layer_4" values="Yes|No"/>
+		<setting label="30005" type="labelenum" id="s9x_layer_5" values="Yes|No"/>
+		<setting label="30006" type="labelenum" id="s9x_gfx_clip" values="Yes|No"/>
+		<setting label="30007" type="labelenum" id="s9x_gfx_transp" values="Yes|No"/>
+		<setting label="30008" type="labelenum" id="s9x_sndchan_1" values="Yes|No"/>
+		<setting label="30009" type="labelenum" id="s9x_sndchan_2" values="Yes|No"/>
+		<setting label="30010" type="labelenum" id="s9x_sndchan_3" values="Yes|No"/>
+		<setting label="30011" type="labelenum" id="s9x_sndchan_4" values="Yes|No"/>
+		<setting label="30012" type="labelenum" id="s9x_sndchan_5" values="Yes|No"/>
+		<setting label="30013" type="labelenum" id="s9x_sndchan_6" values="Yes|No"/>
+		<setting label="30014" type="labelenum" id="s9x_sndchan_7" values="Yes|No"/>
+		<setting label="30015" type="labelenum" id="s9x_sndchan_8" values="Yes|No"/>
+	</category>
+</settings>
+

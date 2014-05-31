@@ -182,7 +182,10 @@ bool CLibretroEnvironment::EnvironmentCallback(unsigned int cmd, void* data)
         for (const retro_variable* variable = typedData; variable->key && variable->value; variable++)
           variables.push_back(*variable);
 
-        CLibretroSettings settings(variables);
+        const string addonDir = m_client->GetLibraryDirectory()      +
+                                "/../../../libretro-extract/addons/" +
+                                m_client->GetID();
+        CLibretroSettings settings(addonDir, variables);
         settings.PrintSettings();
         settings.PrintLanguage();
       }
