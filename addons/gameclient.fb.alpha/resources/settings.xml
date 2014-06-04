@@ -4,7 +4,7 @@
 		<setting label="30001" type="labelenum" id="fba-diagnostics" values="disabled|enabled"/>
 		<setting label="30002" type="labelenum" id="fba-unibios" values="disabled|enabled"/>
 		<setting label="30003" type="labelenum" id="fba-cpu-speed-adjust" values="100|110|120|130|140|150|160|170|180|190|200"/>
-		<setting label="30004" type="labelenum" id="fba-controls" values="gamepad|default"/>
+		<setting label="30004" type="labelenum" id="fba-controls" values="gamepad|arcade"/>
 	</category>
 </settings>
 
