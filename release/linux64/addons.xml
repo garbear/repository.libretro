@@ -4,7 +4,7 @@
 
 <addon id="gameclient.bsnes.performance"
 		name="SNES / Super Famicom (bSNES Performance)"
-		version="94.0.0"
+		version="94.0.1"
 		provider-name="byuu">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -22,19 +22,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">bsnes/higan Performance (v094 (Performance))</summary>
-		<description>Supported files: sfc|smc|bml</description>
+		<description>Supported files: sfc|smc|bml
+
+Last updated 2014-5-16 (5105b47)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.scummvm"
 		name="ScummVM"
-		version="1.0.0"
+		version="1.0.1"
 		provider-name="SCUMMVMdev">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -52,19 +53,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">ScummVM (git)</summary>
-		<description>Supported files: exe</description>
+		<description>Supported files: exe
+
+Last updated 2014-6-4 (3e63488)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.mame078"
 		name="Arcade (MAME 2003)"
-		version="0.78.0"
+		version="0.78.1"
 		provider-name="MAMEdev">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -82,19 +84,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">MAME 2003 (0.78) (0.78)</summary>
-		<description>Supported files: zip</description>
+		<description>Supported files: zip
+
+Last updated 2014-4-26 (91817a9)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.mednafen.gba"
 		name="Game Boy Advance (Mednafen VBA)"
-		version="0.9.33"
+		version="0.9.34"
 		provider-name="Forgotten|Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -112,19 +115,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mednafen VBA (v0.9.33.3)</summary>
-		<description>Supported files: gba|agb|bin</description>
+		<description>Supported files: gba|agb|bin
+
+Last updated 2014-6-4 (2693de3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.vbam"
 		name="Game Boy Advance (VBA-M)"
-		version="1.0.2"
+		version="1.0.3"
 		provider-name="Forgotten|VBA-M Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -142,19 +146,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">VBA-M (v1.0.2)</summary>
-		<description>Supported files: gba</description>
+		<description>Supported files: gba
+
+Last updated 2014-5-23 (79884da)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.stella"
 		name="Atari 2600 (Stella)"
-		version="3.4.1"
+		version="3.4.2"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -172,19 +177,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Stella (3.4.1)</summary>
-		<description>Supported files: a26|bin</description>
+		<description>Supported files: a26|bin
+
+Last updated 2014-4-26 (2b9f9a0)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.3dengine"
 		name="3D Engine"
-		version="1.0.0"
+		version="1.0.1"
 		provider-name="Team Libretro">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -202,19 +208,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">3DEngine (v1)</summary>
-		<description>Supported files: png|jpg|mtl|obj</description>
+		<description>Supported files: png|jpg|mtl|obj
+
+Last updated 2014-4-26 (ae5ebea)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.pcsx.rearmed"
 		name="PlayStation1 (PCSX ReARMed)"
-		version="19.0.0"
+		version="19.0.1"
 		provider-name="PCSX Team|notaz|Exophase">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -232,19 +239,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">PCSX ReARMed (r19)</summary>
-		<description>Supported files: bin|cue|img|mdf|pbp|toc|cbn|m3u</description>
+		<description>Supported files: bin|cue|img|mdf|pbp|toc|cbn|m3u
+
+Last updated 2014-4-26 (9c79adf)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.fb.alpha"
 		name="Arcade (FBA)"
-		version="0.2.97"
+		version="0.2.98"
 		provider-name="Barry Harris">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -262,19 +270,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Final Burn Alpha (v0.2.97.30)</summary>
-		<description>Supported files: iso|zip</description>
+		<description>Supported files: iso|zip
+
+Last updated 2014-5-24 (b5904c8)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.instancingviewer.camera"
 		name="PNG Images (InstancingViewer Camera)"
-		version="2.0.0"
+		version="2.0.1"
 		provider-name="Team Libretro">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -292,19 +301,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">InstancingViewer Camera (v2)</summary>
-		<description>Supported files: png</description>
+		<description>Supported files: png
+
+Last updated 2014-1-12 (a32ba3f)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.vba.next"
 		name="Game Boy Advance (VBA Next)"
-		version="1.0.2"
+		version="1.0.3"
 		provider-name="Forgotten|VBA-M Team|Squarepusher">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -322,19 +332,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">VBA Next (v1.0.2)</summary>
-		<description>Supported files: gba</description>
+		<description>Supported files: gba
+
+Last updated 2014-5-23 (52eec5b)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.mednafen.ngp"
 		name="Neo Geo Pocket/Color (Mednafen Neopop)"
-		version="0.9.33"
+		version="0.9.34"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -352,19 +363,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mednafen Neopop (v0.9.33.3)</summary>
-		<description>Supported files: ngp|ngc</description>
+		<description>Supported files: ngp|ngc
+
+Last updated 2014-6-4 (2693de3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.gambatte"
 		name="Game Boy / Game Boy Color (Gambatte)"
-		version="0.5.0"
+		version="0.5.1"
 		provider-name="Sinamas">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -382,19 +394,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Gambatte (v0.5.0)</summary>
-		<description>Supported files: gb|gbc|dmg</description>
+		<description>Supported files: gb|gbc|dmg
+
+Last updated 2014-4-26 (ee86270)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.scenewalker"
 		name="3D Models (SceneWalker)"
-		version="1.0.0"
+		version="1.0.1"
 		provider-name="Team Libretro">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -412,19 +425,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">SceneWalker (v1)</summary>
-		<description>Supported files: obj</description>
+		<description>Supported files: obj
+
+Last updated 2014-1-12 (b70f7eb)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.mednafen.pce.fast"
 		name="PC Engine/TurboGrafx-16 (Mednafen PCE Fast)"
-		version="0.9.33"
+		version="0.9.34"
 		provider-name="Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -442,19 +456,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mednafen PCE Fast (v0.9.33.3)</summary>
-		<description>Supported files: pce|sgx|cue|ccd</description>
+		<description>Supported files: pce|sgx|cue|ccd
+
+Last updated 2014-6-4 (2693de3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.mednafen.vb"
 		name="Virtual Boy (Mednafen VB)"
-		version="0.9.33"
+		version="0.9.34"
 		provider-name="Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -472,19 +487,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mednafen VB (v0.9.33.3)</summary>
-		<description>Supported files: vb|vboy|bin</description>
+		<description>Supported files: vb|vboy|bin
+
+Last updated 2014-6-4 (2693de3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.bsnes.cplusplus98"
 		name="SNES / Super Famicom (bSNES C++98 (v085))"
-		version="85.0.0"
+		version="85.0.1"
 		provider-name="byuu|Themaister|Ver GreenEyes">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -502,19 +518,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">bsnes C++98 (v085) (v085 (Performance))</summary>
-		<description>Supported files: sfc|smc</description>
+		<description>Supported files: sfc|smc
+
+Last updated 2014-4-26 (073316b)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.prboom"
 		name="Doom (PrBoom)"
-		version="2.5.0"
+		version="2.5.1"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -532,19 +549,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">PrBoom (v2.5.0)</summary>
-		<description>Supported files: wad|iwad</description>
+		<description>Supported files: wad|iwad
+
+Last updated 2014-5-20 (3d409e2)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.desmume"
 		name="Nintendo DS (DeSmuME)"
-		version="1.0.0"
+		version="1.0.1"
 		provider-name="YopYop156|Zeromus">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -562,19 +580,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">DeSmuME (svn)</summary>
-		<description>Supported files: nds|bin</description>
+		<description>Supported files: nds|bin
+
+Last updated 2014-5-24 (7a03cab)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.meteor"
 		name="Game Boy Advance (Meteor)"
-		version="1.4.0"
+		version="1.4.1"
 		provider-name="Philippe Daouadi">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -592,19 +611,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Meteor (v1.4)</summary>
-		<description>Supported files: gba</description>
+		<description>Supported files: gba
+
+Last updated 2014-5-23 (17b051c)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.instancingviewer"
 		name="PNG Images (InstancingViewer)"
-		version="3.0.0"
+		version="3.0.1"
 		provider-name="Team Libretro">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -622,19 +642,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">InstancingViewer (v3)</summary>
-		<description>Supported files: png</description>
+		<description>Supported files: png
+
+Last updated 2014-1-12 (a8e8de6)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.fceumm"
 		name="NES / Famicom (FCEUmm)"
-		version="1.0.0"
+		version="1.0.1"
 		provider-name="CaH4e3|FCEU Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -652,19 +673,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">FCEUmm ((SVN))</summary>
-		<description>Supported files: fds|nes|unif</description>
+		<description>Supported files: fds|nes|unif
+
+Last updated 2014-4-26 (937810b)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.bsnes.accuracy"
 		name="SNES / Super Famicom (bSNES Accuracy)"
-		version="94.0.0"
+		version="94.0.1"
 		provider-name="byuu">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -682,19 +704,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">bsnes/higan Accuracy (v094 (Accuracy))</summary>
-		<description>Supported files: sfc|smc|bml</description>
+		<description>Supported files: sfc|smc|bml
+
+Last updated 2014-5-16 (5105b47)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.modelviewer.location"
 		name="3D Models (Modelviewer) GPS"
-		version="1.0.0"
+		version="1.0.1"
 		provider-name="Team Libretro">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -712,19 +735,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Modelviewer (v1)</summary>
-		<description>Supported files: obj</description>
+		<description>Supported files: obj
+
+Last updated 2014-1-12 (eb9d053)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.tyrquake"
 		name="Quake 1 (TyrQuake)"
-		version="0.62.0"
+		version="0.62.1"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -742,19 +766,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">TyrQuake (v0.62)</summary>
-		<description>Supported files: pak</description>
+		<description>Supported files: pak
+
+Last updated 2014-4-26 (054cd36)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.mednafen.wswan"
 		name="WonderSwan/Color (Mednafen Cygne)"
-		version="0.9.33"
+		version="0.9.34"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -772,19 +797,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mednafen WonderSwan (v0.9.33.3)</summary>
-		<description>Supported files: ws|wsc</description>
+		<description>Supported files: ws|wsc
+
+Last updated 2014-6-4 (2693de3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.snes9x.next"
 		name="SNES / Super Famicom (SNES9x Next)"
-		version="1.52.4"
+		version="1.52.5"
 		provider-name="SNES9x Team|Squarepusher">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -802,19 +828,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">SNES9x Next (v1.52.4)</summary>
-		<description>Supported files: smc|fig|sfc|gd3|gd7|dx2|bsx|swc</description>
+		<description>Supported files: smc|fig|sfc|gd3|gd7|dx2|bsx|swc
+
+Last updated 2014-4-30 (678f4b2)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.snes9x"
 		name="SNES / Super Famicom (SNES9x)"
-		version="1.53.0"
+		version="1.53.1"
 		provider-name="SNES9x Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -832,19 +859,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">SNES9x (1.53)</summary>
-		<description>Supported files: smc|sfc|swc|fig</description>
+		<description>Supported files: smc|sfc|swc|fig
+
+Last updated 2014-4-26 (68e811c)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.modelviewer"
 		name="3D Models (Modelviewer)"
-		version="1.0.0"
+		version="1.0.1"
 		provider-name="Team Libretro">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -862,19 +890,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Modelviewer (v1)</summary>
-		<description>Supported files: obj</description>
+		<description>Supported files: obj
+
+Last updated 2014-1-12 (84f7b0f)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.mednafen.pcfx"
 		name="PC-FX (Mednafen PC-FX)"
-		version="0.9.33"
+		version="0.9.34"
 		provider-name="Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -892,19 +921,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mednafen PC-FX (v0.9.33.3)</summary>
-		<description>Supported files: cue|ccd</description>
+		<description>Supported files: cue|ccd
+
+Last updated 2014-6-4 (2693de3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.mednafen.snes"
 		name="SNES / Super Famicom (Mednafen SNES)"
-		version="0.9.26"
+		version="0.9.27"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -922,19 +952,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mednafen SNES (v0.9.26)</summary>
-		<description>Supported files: smc|fig|bs|st|sfc</description>
+		<description>Supported files: smc|fig|bs|st|sfc
+
+Last updated 2014-6-4 (2693de3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.picodrive"
 		name="Sega MS/GG/MD/CD/32X (Picodrive)"
-		version="1.91.0"
+		version="1.91.1"
 		provider-name="notaz|fdave">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -952,19 +983,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Picodrive (1.91)</summary>
-		<description>Supported files: bin|gen|smd|md|32x|cue|iso|sms</description>
+		<description>Supported files: bin|gen|smd|md|32x|cue|iso|sms
+
+Last updated 2014-4-26 (05689b3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.bsnes.balanced"
 		name="SNES / Super Famicom (bSNES Balanced)"
-		version="94.0.0"
+		version="94.0.1"
 		provider-name="byuu">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -982,19 +1014,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">bsnes/higan Balanced (v094 (Balanced))</summary>
-		<description>Supported files: sfc|smc|bml</description>
+		<description>Supported files: sfc|smc|bml
+
+Last updated 2014-5-16 (5105b47)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.handy"
 		name="Lynx (Handy)"
-		version="0.95.0"
+		version="0.95.1"
 		provider-name="K. Wilkins">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1012,19 +1045,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Handy (0.95)</summary>
-		<description>Supported files: lnx</description>
+		<description>Supported files: lnx
+
+Last updated 2014-5-18 (96880b8)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.quicknes"
 		name="NES / Famicom (QuickNES)"
-		version="1.0.0"
+		version="1.0.1"
 		provider-name="blargg|kode54">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1042,19 +1076,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">QuickNES (v1)</summary>
-		<description>Supported files: nes</description>
+		<description>Supported files: nes
+
+Last updated 2014-4-26 (a7a7466)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.mupen64plus"
 		name="Nintendo 64 (Mupen64plus)"
-		version="2.0.0"
+		version="2.0.1"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1072,19 +1107,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mupen64Plus (2.0-rc2)</summary>
-		<description>Supported files: n64|v64|z64</description>
+		<description>Supported files: n64|v64|z64
+
+Last updated 2014-5-30 (eb7565f)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.nxengine"
 		name="Cave Story (NXEngine)"
-		version="1.0.0"
+		version="1.0.1"
 		provider-name="Caithlin Shaw">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1102,19 +1138,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">NXEngine (1.0.0.4)</summary>
-		<description>Supported files: exe</description>
+		<description>Supported files: exe
+
+Last updated 2014-5-23 (2a4b495)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.mame"
 		name="Arcade (MAME 2014)"
-		version="1.0.0"
+		version="1.0.1"
 		provider-name="MAMEdev">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1132,19 +1169,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">MAME 2014 (Git) (Git)</summary>
-		<description>Supported files: zip|chd|7z</description>
+		<description>Supported files: zip|chd|7z
+
+Last updated 2014-6-4 (91e6842)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.nestopia"
 		name="NES / Famicom (NEStopia)"
-		version="1.46.0"
+		version="1.46.1"
 		provider-name="Martin Freij">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1162,19 +1200,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Nestopia (v1.46-WIP)</summary>
-		<description>Supported files: nes|fds</description>
+		<description>Supported files: nes|fds
+
+Last updated 2014-4-30 (6dc8c6a)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.bnes"
 		name="NES / Famicom (bNES)"
-		version="83.0.0"
+		version="83.0.1"
 		provider-name="byuu">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1192,19 +1231,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">bNES/higan (v083)</summary>
-		<description>Supported files: nes</description>
+		<description>Supported files: nes
+
+Last updated 2014-5-23 (73285f8)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.mednafen.psx"
 		name="PlayStation1 (Mednafen PSX)"
-		version="0.9.33"
+		version="0.9.34"
 		provider-name="Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1222,19 +1262,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mednafen PSX (v0.9.33.3)</summary>
-		<description>Supported files: cue|toc|m3u|ccd</description>
+		<description>Supported files: cue|toc|m3u|ccd
+
+Last updated 2014-6-4 (2693de3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.mednafen.lynx"
 		name="Lynx (Mednafen Lynx)"
-		version="0.9.32"
+		version="0.9.33"
 		provider-name="K. Wilkins|Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1252,19 +1293,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mednafen Lynx (v0.9.32)</summary>
-		<description>Supported files: lnx</description>
+		<description>Supported files: lnx
+
+Last updated 2014-6-4 (2693de3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.dosbox"
 		name="DOS (DOSBox)"
-		version="1.0.0"
+		version="1.0.1"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1282,19 +1324,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">DOSBox (svn)</summary>
-		<description>Supported files: exe|com|bat|conf</description>
+		<description>Supported files: exe|com|bat|conf
+
+Last updated 2014-5-14 (e1da6e4)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.genesis.plus.gx"
 		name="Sega MS/GG/MD/CD (Genesis Plus GX)"
-		version="1.7.4"
+		version="1.7.5"
 		provider-name="Charles McDonald|Eke-Eke">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1312,19 +1355,20 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Genesis Plus GX (v1.7.4)</summary>
-		<description>Supported files: mdx|md|smd|gen|bin|cue|iso|sms|gg|sg</description>
+		<description>Supported files: mdx|md|smd|gen|bin|cue|iso|sms|gg|sg
+
+Last updated 2014-5-8 (693ce4d)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>false</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
 
 <addon id="gameclient.dinothawr"
 		name="Dinothawr"
-		version="1.0.0"
+		version="1.0.1"
 		provider-name="Themaister|Agnes Heyer">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1342,12 +1386,13 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Dinothawr (v1.0)</summary>
-		<description>Supported files: game</description>
+		<description>Supported files: game
+
+Last updated 2014-5-15 (1c500ba)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
 		<noicon>true</noicon>
-		<!--<broken>Poor performance and reported crashes. Use FCEU-Next.</broken>-->
 		
 	</extension>
 </addon>
@@ -1374,6 +1419,5 @@
         <nofanart>true</nofanart>
     </extension>
 </addon>
-
 
 </addons>
