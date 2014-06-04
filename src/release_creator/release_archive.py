@@ -88,6 +88,10 @@ class ReleaseArchive:
         maxAddonVersion = self._GetMaxVersion(addonXml.GetVersion())
         
         zipPath = ReleaseArchive.GetArchivePath(self._id, maxAddonVersion)
+        
+        zipDir = os.path.split(zipPath)[0]
+        zipName = os.path.split(zipPath)[1]
+        
         if zipfile.is_zipfile(zipPath):
             addonXml.SetVersion(maxAddonVersion)
             
@@ -120,14 +124,11 @@ class ReleaseArchive:
             if (addonXml.GetFanartPath() != None) != zipHasFanart:
                 different = True
             
-            zipDir = os.path.split(zipPath)[0]
-            zipName = os.path.split(zipPath)[1]
             if not different:
                 print('Archive %s is up to date' % zipName)
                 return True # All done here
             
             print('Changes detected in archive %s' % zipName)
-            
             
             # Archive differs, so bump the version and call Update() again
             addonXml.SetVersion(maxAddonVersion.Bump())
@@ -151,6 +152,8 @@ class ReleaseArchive:
             changeLogText   = changeLog.GetText()
             settingsXmlText = settingsXml.ReadXml().strip()
             stringsPoText   = stringsPo.ReadPo().strip()
+            
+            print('Writing archive %s' % zipName)
             
             if self._WriteZipFile(zipPath, addonXmlText, changeLogText, settingsXmlText, stringsPoText, dll.GetPath(), addonXml.GetIconPath(), addonXml.GetFanartPath()):
                 md5File = MD5File(zipPath)
