@@ -28,6 +28,7 @@
 #endif
 
 #include <assert.h>
+#include <cstring>>
 #include <stdio.h>
 
 using namespace LIBRETRO;
