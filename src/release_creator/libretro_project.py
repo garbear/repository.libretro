@@ -84,7 +84,7 @@ class LibretroProject:
         return self._name
     
     def GetVersionHash(self):
-        return self._versionHash
+        return self._versionHash[ : 7]
     
     def GetDate(self):
         return self._date
