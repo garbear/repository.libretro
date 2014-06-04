@@ -84,8 +84,6 @@ class ReleaseArchive:
         return maxVersion
     
     def Update(self, addonXml, changeLog, dll, settingsXml, stringsPo):
-        print('Creating release archive for %s' % self._id)
-        
         # First check for existing archives
         maxAddonVersion = self._GetMaxVersion(addonXml.GetVersion())
         
@@ -122,18 +120,29 @@ class ReleaseArchive:
             if (addonXml.GetFanartPath() != None) != zipHasFanart:
                 different = True
             
+            zipDir = os.path.split(zipPath)[0]
+            zipName = os.path.split(zipPath)[1]
             if not different:
-                print('Archive %s is up to date' % os.path.split(zipPath)[1])
+                print('Archive %s is up to date' % zipName)
                 return True # All done here
+            
+            print('Changes detected in archive %s' % zipName)
+            
             
             # Archive differs, so bump the version and call Update() again
             addonXml.SetVersion(maxAddonVersion.Bump())
-            if not self.Update(addonXml, changeLog, dll):
+            if not self.Update(addonXml, changeLog, dll, settingsXml, stringsPo):
                 return False
             
             # Archive has been updated to new version. Remove the old archive.
-            os.remove(zipPath)
-            os.remove(zipPath + MD5File.GetExtension())
+            Environment.CheckOutput(zipDir, ['git', 'rm', zipName])
+            Environment.CheckOutput(zipDir, ['git', 'rm', zipName + MD5File.GetExtension()])
+            
+            # If git rm failed, remove the file using Python calls
+            if os.path.exists(zipPath):
+                os.remove(zipPath)
+            if os.path.exists(zipPath + MD5File.GetExtension()):
+                os.remove(zipPath + MD5File.GetExtension())
         else:
             # Archive doesn't already exist. Create now
             assert(addonXml.GetVersion().ToString() == maxAddonVersion.ToString())

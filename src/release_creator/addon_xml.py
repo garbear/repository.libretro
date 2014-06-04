@@ -57,6 +57,7 @@ class AddonXml:
         self._id           = dll.GetID()
         self._info         = dll.GetInfo()
         self._libraryPath  = dll.GetPath()
+        self._project      = dll.GetProject()
         
         addonDir = Environment.GetAddonDir(self._id)
         
@@ -176,7 +177,14 @@ class AddonXml:
         if self._info.GetExtensions():
             if description:
                 description += '\n\n'
+            
             description += 'Supported files: @extensions@'
+        
+        if description:
+            description += '\n\n'
+        
+        # Including the git hash will cause the release archive to be updated if a new version is compiled
+        description += 'Last updated %s (%s)' % (self._project.GetDate(), self._project.GetVersionHash())
         
         return description
     
