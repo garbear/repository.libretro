@@ -182,8 +182,9 @@ bool CLibretroEnvironment::EnvironmentCallback(unsigned int cmd, void* data)
         for (const retro_variable* variable = typedData; variable->key && variable->value; variable++)
           variables.push_back(*variable);
 
-        const string addonDir = m_client->GetLibraryDirectory()      +
-                                "/../../../libretro-extract/addons/" +
+        // Assumes libretro library is at /libretro-super/dist/platform/
+        const string addonDir = m_client->GetLibraryDirectory() +
+                                "/../../../addons/" +
                                 m_client->GetID();
         CLibretroSettings settings(addonDir, variables);
         settings.PrintSettings();

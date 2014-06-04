@@ -33,7 +33,7 @@ using namespace std;
 
 #define RESOURCES_DIR  "resources"
 #define LANGUAGES_DIR  "languages"
-#define ENGLISH_DIR    "english"
+#define ENGLISH_DIR    "English"
 #define STRINGS_FILE   "strings.po"
 
 vector<string> CLibretroString::m_strings;
