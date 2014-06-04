@@ -86,6 +86,9 @@ int main(int argc, const char* argv[])
     if (name == "vbam_libretro.dylib" || name == "vbam_libretro.so")
       continue; // error: memory read failed for 0x0
 
+    if (name == "mame_libretro.so")
+      continue; // Segmentation fault
+
     string libretroCore = libraryDir + "/" + name;
 
     cout << "libretroCore: " << name << endl;
@@ -128,7 +131,7 @@ int main(int argc, const char* argv[])
 
     // Skip deinit if name contains "mednafen_" and ".dylib"
     // Thread 1: EXC_BAD_ACCESS (code=2, address=0x7fff5bfef0)
-    if (!(name.find("mednafen_") != string::npos && name.find(".dylib") != string::npos))
+    if (!(name.find("mednafen_") != string::npos && (name.find(".dylib") != string::npos || name.find(".so") != string::npos)))
       CLIENT->retro_deinit();
 
     delete CLIENT;
