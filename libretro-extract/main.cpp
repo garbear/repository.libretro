@@ -86,8 +86,8 @@ int main(int argc, const char* argv[])
     if (name == "vbam_libretro.dylib" || name == "vbam_libretro.so")
       continue; // error: memory read failed for 0x0
 
-    if (name == "mame_libretro.so")
-      continue; // Segmentation fault
+    if (name == "mame_libretro.so" || name == "mame_libretro.dylib")
+      continue; // Segmentation fault on linux, Bus Error 10 on OSX
 
     string libretroCore = libraryDir + "/" + name;
 
