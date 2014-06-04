@@ -22,6 +22,8 @@ from addon_xml import AddonXml
 from changelog import ChangeLog
 from environment import Environment
 from release_archive import ReleaseArchive
+from settings_xml import SettingsXml
+from strings_po import StringsPo
 
 import os
 import unittest
@@ -32,6 +34,8 @@ class Addon:
         self._dll            = dll
         self._addonXml       = AddonXml(dll)
         self._changeLog      = ChangeLog() # TODO
+        self._settingsXml    = SettingsXml(self._id)
+        self._stringsPo      = StringsPo(self._addonXml)
         self._releaseArchive = ReleaseArchive(self._id)
         """
         # Get the most recent release
@@ -70,7 +74,7 @@ class Addon:
         Save the addon components (addon.xml, changelog.txt and libretro
         library) to /addons folder.
         """
-        return self._addonXml.Save() and self._changeLog.Save()
+        return self._addonXml.Save() and self._changeLog.Save() and self._settingsXml.Save()
     
     def CreateRelease(self):
         """
@@ -80,7 +84,7 @@ class Addon:
         if not os.path.exists(Environment.GetReleaseDir(self._id)):
             os.makedirs(Environment.GetReleaseDir(self._id))
         
-        return self._releaseArchive.Update(self._addonXml, self._changeLog, self._dll)
+        return self._releaseArchive.Update(self._addonXml, self._changeLog, self._dll, self._settingsXml, self._stringsPo)
 
 class TestAddonXml(unittest.TestCase):
     def setUp(self):

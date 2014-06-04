@@ -22,6 +22,8 @@ from addon_xml import AddonXml
 from changelog import ChangeLog
 from environment import Environment
 from md5_file import MD5File
+from settings_xml import SettingsXml
+from strings_po import StringsPo
 
 import os
 import shutil
@@ -81,7 +83,7 @@ class ReleaseArchive:
         
         return maxVersion
     
-    def Update(self, addonXml, changeLog, dll):
+    def Update(self, addonXml, changeLog, dll, settingsXml, stringsPo):
         print('Creating release archive for %s' % self._id)
         
         # First check for existing archives
@@ -91,19 +93,27 @@ class ReleaseArchive:
         if zipfile.is_zipfile(zipPath):
             addonXml.SetVersion(maxAddonVersion)
             
-            addonXmlText  = addonXml.GetAddonXml()
-            changeLogText = changeLog.GetText()
+            addonXmlText    = addonXml.GetAddonXml().strip()
+            changeLogText   = changeLog.GetText().strip()
+            settingsXmlText = settingsXml.ReadXml().strip()
+            stringsPoText   = stringsPo.ReadPo().strip()
             
             # Release archive for this version already exists
             # Check if existing archive differs from updated archive
             different = False
             
-            zipAddonXmlText, zipChangeLogText, zipHasIcon, zipHasFanart, zipHasLibrary = self._GetZipInfo(zipPath)
+            zipAddonXmlText, zipChangeLogText, zipSettingsXmlText, zipStringsPoText, zipHasIcon, zipHasFanart, zipHasLibrary = self._GetZipInfo(zipPath)
             
             if addonXmlText != zipAddonXmlText:
                 different = True
             
             if changeLogText != zipChangeLogText:
+                different = True
+            
+            if settingsXmlText != zipSettingsXmlText:
+                different = True
+            
+            if stringsPoText != zipStringsPoText:
                 different = True
             
             if (addonXml.GetIconPath() != None) != zipHasIcon:
@@ -128,10 +138,12 @@ class ReleaseArchive:
             # Archive doesn't already exist. Create now
             assert(addonXml.GetVersion().ToString() == maxAddonVersion.ToString())
             
-            addonXmlText  = addonXml.GetAddonXml()
-            changeLogText = changeLog.GetText()
+            addonXmlText    = addonXml.GetAddonXml()
+            changeLogText   = changeLog.GetText()
+            settingsXmlText = settingsXml.ReadXml().strip()
+            stringsPoText   = stringsPo.ReadPo().strip()
             
-            if self._WriteZipFile(zipPath, addonXmlText, changeLogText, addonXml.GetIconPath(), addonXml.GetFanartPath(), dll.GetPath()):
+            if self._WriteZipFile(zipPath, addonXmlText, changeLogText, settingsXmlText, stringsPoText, dll.GetPath(), addonXml.GetIconPath(), addonXml.GetFanartPath()):
                 md5File = MD5File(zipPath)
                 if not md5File.Save():
                     # MD5 file failed, remove archive
@@ -154,11 +166,13 @@ class ReleaseArchive:
         return True
     
     def _GetZipInfo(self, path):
-        addonXmlText  = ''
-        changeLogText = ''
-        hasIcon       = False
-        hasFanart     = False
-        hasLibrary    = False
+        addonXmlText    = ''
+        changeLogText   = ''
+        settingsXmlText = ''
+        stringsPoText   = ''
+        hasIcon         = False
+        hasFanart       = False
+        hasLibrary      = False
         
         if zipfile.is_zipfile(path):
             myzip = zipfile.ZipFile(path, 'r')
@@ -171,6 +185,10 @@ class ReleaseArchive:
                     addonXmlText  = myzip.read(filepath).strip()
                 elif filename == ChangeLog.GetFileName():
                     changeLogText = myzip.read(filepath).strip()
+                elif filename.endswith(SettingsXml.GetFileName()):
+                    settingsXmlText = myzip.read(filepath).strip()
+                elif filename.endswith(StringsPo.GetFileName()):
+                    stringsPoText = myzip.read(filepath).strip()
                 elif filename == AddonXml.GetIconFileName():
                     hasIcon = True
                 elif filename == AddonXml.GetFanartFileName():
@@ -178,14 +196,18 @@ class ReleaseArchive:
                 elif filename.endswith(Environment.GetDllExtension()):
                     hasLibrary = True
         
-        return addonXmlText, changeLogText, hasIcon, hasFanart, hasLibrary
+        return addonXmlText, changeLogText, settingsXmlText, stringsPoText, hasIcon, hasFanart, hasLibrary
     
-    def _WriteZipFile(self, zipPath, addonXmlText, changeLogText, iconPath, fanartPath, dllPath):
+    def _WriteZipFile(self, zipPath, addonXmlText, changeLogText, settingsXmlText, stringsPoText, dllPath, iconPath, fanartPath):
         # Shove everything into the zip file
         myzip = zipfile.ZipFile(zipPath, 'w', zipfile.ZIP_DEFLATED)
         
         myzip.writestr(os.path.join(self._id, AddonXml.GetFileName()), addonXmlText)
         #myzip.writestr(os.path.join(self._id, ChangeLog.GetFileName()), changeLogText) # TODO: Uncomment once changelogs are implemented
+        if settingsXmlText:
+            myzip.writestr(os.path.join(self._id, 'resources', SettingsXml.GetFileName()), settingsXmlText)
+        if stringsPoText:
+            myzip.writestr(os.path.join(self._id, 'resources', 'languages', 'English', StringsPo.GetFileName()), stringsPoText)
         myzip.write(dllPath, os.path.join(self._id, os.path.split(dllPath)[1]))
         if iconPath:
             myzip.write(iconPath, os.path.join(self._id, AddonXml.GetIconFileName()))

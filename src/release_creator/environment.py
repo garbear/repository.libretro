@@ -22,10 +22,14 @@ import platform
 import subprocess
 import unittest
 
-ADDONS_DIR          = 'addons'
-SRC_DIR             = 'src'
-RELEASE_CREATOR_DIR = 'release_creator'
-RELEASE_DIR         = 'release'
+ADDONS_DIR           = 'addons'
+RESOURCES_DIR        = 'resources'
+LANGUAGES_DIR        = 'languages'
+ENGLISH_DIR          = 'English'
+SRC_DIR              = 'src'
+RELEASE_CREATOR_DIR  = 'release_creator'
+RELEASE_DIR          = 'release'
+LIBRETRO_EXTRACT_DIR = 'libretro-extract'
 
 class Environment:
     WIN     = 'win32'
@@ -72,6 +76,20 @@ class Environment:
         Add-on dir is its ID in /addons.
         """
         return os.path.join(Environment.GetAddonsDir(), addonId)
+    
+    @staticmethod
+    def GetResourceDir(addonId):
+        """
+        Add-on dir is its ID in /addons.
+        """
+        return os.path.join(Environment.GetAddonDir(addonId), RESOURCES_DIR)
+    
+    @staticmethod
+    def GetStringsDir(addonId):
+        """
+        Add-on dir is its ID in /addons.
+        """
+        return os.path.join(Environment.GetResourceDir(addonId), LANGUAGES_DIR, ENGLISH_DIR)
     
     @staticmethod
     def GetSrcDir():
@@ -170,6 +188,16 @@ class TestEnvironment(unittest.TestCase):
         ADDON_ID = 'repository.libretro-linux64'
         self.assertNotEqual(Environment.GetAddonDir(ADDON_ID), '')
         self.assertTrue(os.path.exists(Environment.GetAddonDir(ADDON_ID)))
+    
+    def test_resource_dir(self):
+        ADDON_ID = 'gameclient.desmume'
+        self.assertNotEqual(Environment.GetResourceDir(ADDON_ID), '')
+        self.assertTrue(os.path.exists(Environment.GetResourceDir(ADDON_ID)))
+    
+    def test_strings_dir(self):
+        ADDON_ID = 'gameclient.desmume'
+        self.assertNotEqual(Environment.GetStringsDir(ADDON_ID), '')
+        self.assertTrue(os.path.exists(Environment.GetStringsDir(ADDON_ID)))
     
     def test_src_dir(self):
         self.assertNotEqual(Environment.GetSrcDir(), '')

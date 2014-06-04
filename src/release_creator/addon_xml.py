@@ -123,6 +123,9 @@ class AddonXml:
         return False
     
     def ReplaceTokens(self, line):
+        """
+        Replace tokens (like @tokenname@) with the corresponding property.
+        """
         # Skip characters at the beginning of line (increases for every processed token)
         skip = 0
         
