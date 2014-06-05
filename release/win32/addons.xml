@@ -4,7 +4,7 @@
 
 <addon id="gameclient.fceumm"
 		name="NES / Famicom (FCEUmm)"
-		version="1.0.0"
+		version="1.0.1"
 		provider-name="CaH4e3|FCEU Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -22,7 +22,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">FCEUmm ((SVN))</summary>
-		<description>Supported files: fds|nes|unif</description>
+		<description>Supported files: fds|nes|unif
+
+Last updated 2014-4-26 (937810b)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -33,7 +35,7 @@
 
 <addon id="gameclient.gambatte"
 		name="Game Boy / Game Boy Color (Gambatte)"
-		version="0.5.0"
+		version="0.5.1"
 		provider-name="Sinamas">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -51,7 +53,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Gambatte (v0.5.0)</summary>
-		<description>Supported files: gb|gbc|dmg</description>
+		<description>Supported files: gb|gbc|dmg
+
+Last updated 2014-4-26 (ee86270)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -62,7 +66,7 @@
 
 <addon id="gameclient.genesis.plus.gx"
 		name="Sega MS/GG/MD/CD (Genesis Plus GX)"
-		version="1.7.4"
+		version="1.7.5"
 		provider-name="Charles McDonald|Eke-Eke">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -80,7 +84,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Genesis Plus GX (v1.7.4)</summary>
-		<description>Supported files: mdx|md|smd|gen|bin|cue|iso|sms|gg|sg</description>
+		<description>Supported files: mdx|md|smd|gen|bin|cue|iso|sms|gg|sg
+
+Last updated 2014-5-8 (693ce4d)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -91,7 +97,7 @@
 
 <addon id="gameclient.mame078"
 		name="Arcade (MAME 2003)"
-		version="0.78.0"
+		version="0.78.1"
 		provider-name="MAMEdev">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -109,7 +115,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">MAME 2003 (0.78) (0.78)</summary>
-		<description>Supported files: zip</description>
+		<description>Supported files: zip
+
+Last updated 2014-4-26 (91817a9)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -120,7 +128,7 @@
 
 <addon id="gameclient.mednafen.gba"
 		name="Game Boy Advance (Mednafen VBA)"
-		version="0.9.33"
+		version="0.9.34"
 		provider-name="Forgotten|Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -138,7 +146,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mednafen VBA (v0.9.33.3)</summary>
-		<description>Supported files: gba|agb|bin</description>
+		<description>Supported files: gba|agb|bin
+
+Last updated 2014-6-4 (2693de3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -149,7 +159,7 @@
 
 <addon id="gameclient.mednafen.ngp"
 		name="Neo Geo Pocket/Color (Mednafen Neopop)"
-		version="0.9.33"
+		version="0.9.34"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -167,7 +177,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mednafen Neopop (v0.9.33.3)</summary>
-		<description>Supported files: ngp|ngc</description>
+		<description>Supported files: ngp|ngc
+
+Last updated 2014-6-4 (2693de3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -178,7 +190,7 @@
 
 <addon id="gameclient.mednafen.pce.fast"
 		name="PC Engine/TurboGrafx-16 (Mednafen PCE Fast)"
-		version="0.9.33"
+		version="0.9.34"
 		provider-name="Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -196,7 +208,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mednafen PCE Fast (v0.9.33.3)</summary>
-		<description>Supported files: pce|sgx|cue|ccd</description>
+		<description>Supported files: pce|sgx|cue|ccd
+
+Last updated 2014-6-4 (2693de3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -207,7 +221,7 @@
 
 <addon id="gameclient.mednafen.pcfx"
 		name="PC-FX (Mednafen PC-FX)"
-		version="0.9.33"
+		version="0.9.34"
 		provider-name="Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -225,7 +239,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mednafen PC-FX (v0.9.33.3)</summary>
-		<description>Supported files: cue|ccd</description>
+		<description>Supported files: cue|ccd
+
+Last updated 2014-6-4 (2693de3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -236,7 +252,7 @@
 
 <addon id="gameclient.mednafen.vb"
 		name="Virtual Boy (Mednafen VB)"
-		version="0.9.33"
+		version="0.9.34"
 		provider-name="Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -254,7 +270,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mednafen VB (v0.9.33.3)</summary>
-		<description>Supported files: vb|vboy|bin</description>
+		<description>Supported files: vb|vboy|bin
+
+Last updated 2014-6-4 (2693de3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -265,7 +283,7 @@
 
 <addon id="gameclient.mednafen.wswan"
 		name="WonderSwan/Color (Mednafen Cygne)"
-		version="0.9.33"
+		version="0.9.34"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -283,7 +301,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Mednafen WonderSwan (v0.9.33.3)</summary>
-		<description>Supported files: ws|wsc</description>
+		<description>Supported files: ws|wsc
+
+Last updated 2014-6-4 (2693de3)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -294,7 +314,7 @@
 
 <addon id="gameclient.nestopia"
 		name="NES / Famicom (NEStopia)"
-		version="1.46.0"
+		version="1.46.1"
 		provider-name="Martin Freij">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -312,7 +332,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Nestopia (v1.46-WIP)</summary>
-		<description>Supported files: nes|fds</description>
+		<description>Supported files: nes|fds
+
+Last updated 2014-4-30 (6dc8c6a)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -323,7 +345,7 @@
 
 <addon id="gameclient.nxengine"
 		name="Cave Story (NXEngine)"
-		version="1.0.0"
+		version="1.0.1"
 		provider-name="Caithlin Shaw">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -341,7 +363,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">NXEngine (1.0.0.4)</summary>
-		<description>Supported files: exe</description>
+		<description>Supported files: exe
+
+Last updated 2014-5-23 (2a4b495)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -352,7 +376,7 @@
 
 <addon id="gameclient.prboom"
 		name="Doom (PrBoom)"
-		version="2.5.0"
+		version="2.5.1"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -370,7 +394,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">PrBoom (v2.5.0)</summary>
-		<description>Supported files: wad|iwad</description>
+		<description>Supported files: wad|iwad
+
+Last updated 2014-5-20 (3d409e2)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -381,7 +407,7 @@
 
 <addon id="gameclient.snes9x"
 		name="SNES / Super Famicom (SNES9x)"
-		version="1.53.0"
+		version="1.53.1"
 		provider-name="SNES9x Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -399,7 +425,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">SNES9x (1.53)</summary>
-		<description>Supported files: smc|sfc|swc|fig</description>
+		<description>Supported files: smc|sfc|swc|fig
+
+Last updated 2014-4-26 (68e811c)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -410,7 +438,7 @@
 
 <addon id="gameclient.snes9x.next"
 		name="SNES / Super Famicom (SNES9x Next)"
-		version="1.52.4"
+		version="1.52.5"
 		provider-name="SNES9x Team|Squarepusher">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -428,7 +456,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">SNES9x Next (v1.52.4)</summary>
-		<description>Supported files: smc|fig|sfc|gd3|gd7|dx2|bsx|swc</description>
+		<description>Supported files: smc|fig|sfc|gd3|gd7|dx2|bsx|swc
+
+Last updated 2014-4-30 (678f4b2)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -439,7 +469,7 @@
 
 <addon id="gameclient.stella"
 		name="Atari 2600 (Stella)"
-		version="3.4.1"
+		version="3.4.2"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -457,7 +487,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Stella (3.4.1)</summary>
-		<description>Supported files: a26|bin</description>
+		<description>Supported files: a26|bin
+
+Last updated 2014-4-26 (2b9f9a0)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -468,7 +500,7 @@
 
 <addon id="gameclient.tyrquake"
 		name="Quake 1 (TyrQuake)"
-		version="0.62.0"
+		version="0.62.1"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -486,7 +518,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">TyrQuake (v0.62)</summary>
-		<description>Supported files: pak</description>
+		<description>Supported files: pak
+
+Last updated 2014-4-26 (054cd36)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -497,7 +531,7 @@
 
 <addon id="gameclient.vba.next"
 		name="Game Boy Advance (VBA Next)"
-		version="1.0.2"
+		version="1.0.3"
 		provider-name="Forgotten|VBA-M Team|Squarepusher">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -515,7 +549,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">VBA Next (v1.0.2)</summary>
-		<description>Supported files: gba</description>
+		<description>Supported files: gba
+
+Last updated 2014-5-23 (52eec5b)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
