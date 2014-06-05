@@ -47,8 +47,7 @@ Here is what extracted settings looked like in the old repository.libretro syste
 
 TODO
 ----
-* Export settings from libretro cores in the libretro-extract program
-* Generate settings.xml and language files from the extracted settings
+* Add descriptions of libretro cores to libretro-super's .info files (libretro-super/dist/info)
 * Include extra files (like BIOSes and libretro configuration scripts) stored in /addons
 * changelog.txt support, so that the history of new releases can be displayed within XBMC
 * Find more artwork for libretro cores!
