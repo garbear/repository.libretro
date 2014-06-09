@@ -407,7 +407,7 @@ Last updated 2014-5-20 (3d409e2)</description>
 
 <addon id="gameclient.snes9x"
 		name="SNES / Super Famicom (SNES9x)"
-		version="1.53.1"
+		version="1.53.2"
 		provider-name="SNES9x Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>

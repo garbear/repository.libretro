@@ -39,10 +39,10 @@ def CreateRelease():
     print('Using branch %s of libretro-super' % libretroSuper.GetBranch())
     
     print('Updating libretro-super projects')
-    libretroSuper.Fetch()
+    #libretroSuper.Fetch()
     
     print('Building libretro-super projects')
-    libretroSuper.Build()
+    #libretroSuper.Build()
     
     print('Analyzing build results for generated binaries')
     dlls = libretroSuper.GetDlls()
