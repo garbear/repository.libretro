@@ -35,7 +35,7 @@ Last updated 2014-4-26 (937810b)</description>
 
 <addon id="gameclient.gambatte"
 		name="Game Boy / Game Boy Color (Gambatte)"
-		version="0.5.1"
+		version="0.5.2"
 		provider-name="Sinamas">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -55,7 +55,7 @@ Last updated 2014-4-26 (937810b)</description>
 		<summary lang="en">Gambatte (v0.5.0)</summary>
 		<description>Supported files: gb|gbc|dmg
 
-Last updated 2014-4-26 (ee86270)</description>
+Last updated 2014-6-5 (c71935d)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -128,7 +128,7 @@ Last updated 2014-4-26 (91817a9)</description>
 
 <addon id="gameclient.mednafen.gba"
 		name="Game Boy Advance (Mednafen VBA)"
-		version="0.9.34"
+		version="0.9.35"
 		provider-name="Forgotten|Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -148,7 +148,7 @@ Last updated 2014-4-26 (91817a9)</description>
 		<summary lang="en">Mednafen VBA (v0.9.33.3)</summary>
 		<description>Supported files: gba|agb|bin
 
-Last updated 2014-6-4 (2693de3)</description>
+Last updated 2014-6-9 (c3e7cc8)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -159,7 +159,7 @@ Last updated 2014-6-4 (2693de3)</description>
 
 <addon id="gameclient.mednafen.ngp"
 		name="Neo Geo Pocket/Color (Mednafen Neopop)"
-		version="0.9.34"
+		version="0.9.35"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -179,7 +179,7 @@ Last updated 2014-6-4 (2693de3)</description>
 		<summary lang="en">Mednafen Neopop (v0.9.33.3)</summary>
 		<description>Supported files: ngp|ngc
 
-Last updated 2014-6-4 (2693de3)</description>
+Last updated 2014-6-9 (c3e7cc8)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -190,7 +190,7 @@ Last updated 2014-6-4 (2693de3)</description>
 
 <addon id="gameclient.mednafen.pce.fast"
 		name="PC Engine/TurboGrafx-16 (Mednafen PCE Fast)"
-		version="0.9.34"
+		version="0.9.35"
 		provider-name="Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -210,7 +210,7 @@ Last updated 2014-6-4 (2693de3)</description>
 		<summary lang="en">Mednafen PCE Fast (v0.9.33.3)</summary>
 		<description>Supported files: pce|sgx|cue|ccd
 
-Last updated 2014-6-4 (2693de3)</description>
+Last updated 2014-6-9 (c3e7cc8)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -221,7 +221,7 @@ Last updated 2014-6-4 (2693de3)</description>
 
 <addon id="gameclient.mednafen.pcfx"
 		name="PC-FX (Mednafen PC-FX)"
-		version="0.9.34"
+		version="0.9.35"
 		provider-name="Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -241,7 +241,7 @@ Last updated 2014-6-4 (2693de3)</description>
 		<summary lang="en">Mednafen PC-FX (v0.9.33.3)</summary>
 		<description>Supported files: cue|ccd
 
-Last updated 2014-6-4 (2693de3)</description>
+Last updated 2014-6-9 (c3e7cc8)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -252,7 +252,7 @@ Last updated 2014-6-4 (2693de3)</description>
 
 <addon id="gameclient.mednafen.vb"
 		name="Virtual Boy (Mednafen VB)"
-		version="0.9.34"
+		version="0.9.35"
 		provider-name="Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -272,7 +272,7 @@ Last updated 2014-6-4 (2693de3)</description>
 		<summary lang="en">Mednafen VB (v0.9.33.3)</summary>
 		<description>Supported files: vb|vboy|bin
 
-Last updated 2014-6-4 (2693de3)</description>
+Last updated 2014-6-9 (c3e7cc8)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -283,7 +283,7 @@ Last updated 2014-6-4 (2693de3)</description>
 
 <addon id="gameclient.mednafen.wswan"
 		name="WonderSwan/Color (Mednafen Cygne)"
-		version="0.9.34"
+		version="0.9.35"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -303,7 +303,7 @@ Last updated 2014-6-4 (2693de3)</description>
 		<summary lang="en">Mednafen WonderSwan (v0.9.33.3)</summary>
 		<description>Supported files: ws|wsc
 
-Last updated 2014-6-4 (2693de3)</description>
+Last updated 2014-6-9 (c3e7cc8)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
