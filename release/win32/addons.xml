@@ -4,7 +4,7 @@
 
 <addon id="gameclient.fceumm"
 		name="NES / Famicom (FCEUmm)"
-		version="1.0.1"
+		version="1.0.2"
 		provider-name="CaH4e3|FCEU Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -314,7 +314,7 @@ Last updated 2014-6-9 (c3e7cc8)</description>
 
 <addon id="gameclient.nestopia"
 		name="NES / Famicom (NEStopia)"
-		version="1.46.1"
+		version="1.46.2"
 		provider-name="Martin Freij">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -500,7 +500,7 @@ Last updated 2014-4-26 (2b9f9a0)</description>
 
 <addon id="gameclient.tyrquake"
 		name="Quake 1 (TyrQuake)"
-		version="0.62.1"
+		version="0.62.2"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
