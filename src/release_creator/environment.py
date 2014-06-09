@@ -24,7 +24,7 @@ import unittest
 
 ADDONS_DIR           = 'addons'
 RESOURCES_DIR        = 'resources'
-LANGUAGES_DIR        = 'languages'
+LANGUAGES_DIR        = 'language'
 ENGLISH_DIR          = 'English'
 SRC_DIR              = 'src'
 RELEASE_CREATOR_DIR  = 'release_creator'

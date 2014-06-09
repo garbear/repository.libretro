@@ -21,6 +21,9 @@ from addon_version import AddonVersion
 from addon_xml import AddonXml
 from changelog import ChangeLog
 from environment import Environment
+from environment import RESOURCES_DIR
+from environment import LANGUAGES_DIR
+from environment import ENGLISH_DIR
 from md5_file import MD5File
 from settings_xml import SettingsXml
 from strings_po import StringsPo
@@ -217,9 +220,9 @@ class ReleaseArchive:
         myzip.writestr(os.path.join(self._id, AddonXml.GetFileName()), addonXmlText)
         #myzip.writestr(os.path.join(self._id, ChangeLog.GetFileName()), changeLogText) # TODO: Uncomment once changelogs are implemented
         if settingsXmlText:
-            myzip.writestr(os.path.join(self._id, 'resources', SettingsXml.GetFileName()), settingsXmlText)
+            myzip.writestr(os.path.join(self._id, RESOURCES_DIR, SettingsXml.GetFileName()), settingsXmlText)
         if stringsPoText:
-            myzip.writestr(os.path.join(self._id, 'resources', 'languages', 'English', StringsPo.GetFileName()), stringsPoText)
+            myzip.writestr(os.path.join(self._id, RESOURCES_DIR, LANGUAGES_DIR, ENGLISH_DIR, StringsPo.GetFileName()), stringsPoText)
         myzip.write(dllPath, os.path.join(self._id, os.path.split(dllPath)[1]))
         if iconPath:
             myzip.write(iconPath, os.path.join(self._id, AddonXml.GetIconFileName()))
