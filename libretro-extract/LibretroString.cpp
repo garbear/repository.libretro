@@ -32,7 +32,7 @@ using namespace std;
 #define XBMC_STRING_START  30000
 
 #define RESOURCES_DIR  "resources"
-#define LANGUAGES_DIR  "languages"
+#define LANGUAGE_DIR   "language"
 #define ENGLISH_DIR    "English"
 #define STRINGS_FILE   "strings.po"
 
@@ -62,9 +62,9 @@ void CLibretroString::PrintLanguage(const string& strAddonDir)
   const mode_t mode = S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH;
   mkdir(strAddonDir.c_str(), mode);
   mkdir((strAddonDir + "/" RESOURCES_DIR).c_str(), mode);
-  mkdir((strAddonDir + "/" RESOURCES_DIR "/" LANGUAGES_DIR).c_str(), mode);
-  mkdir((strAddonDir + "/" RESOURCES_DIR "/" LANGUAGES_DIR "/" ENGLISH_DIR).c_str(), mode);
-  string strFilePath = strAddonDir + "/" RESOURCES_DIR "/" LANGUAGES_DIR "/" ENGLISH_DIR "/" STRINGS_FILE;
+  mkdir((strAddonDir + "/" RESOURCES_DIR "/" LANGUAGE_DIR).c_str(), mode);
+  mkdir((strAddonDir + "/" RESOURCES_DIR "/" LANGUAGE_DIR "/" ENGLISH_DIR).c_str(), mode);
+  string strFilePath = strAddonDir + "/" RESOURCES_DIR "/" LANGUAGE_DIR "/" ENGLISH_DIR "/" STRINGS_FILE;
 
   fstream file;
   file.open(strFilePath.c_str(), ios::out);
