@@ -107,7 +107,7 @@ void CLibretroSettings::PrintSettings()
         file << "|";
       file << *it2;
     }
-    file << "\"/>" << endl;
+    file << "\" default=\"" << it->vecValues[0] << "\"/>" << endl;
   }
 
   file << "\t</category>" << endl;
