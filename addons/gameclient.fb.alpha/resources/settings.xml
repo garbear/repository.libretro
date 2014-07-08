@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
 	<category label="30000">
-		<setting label="30001" type="labelenum" id="fba-diagnostics" values="disabled|enabled"/>
-		<setting label="30002" type="labelenum" id="fba-unibios" values="disabled|enabled"/>
-		<setting label="30003" type="labelenum" id="fba-cpu-speed-adjust" values="100|110|120|130|140|150|160|170|180|190|200"/>
-		<setting label="30004" type="labelenum" id="fba-controls" values="gamepad|arcade"/>
+		<setting label="30001" type="labelenum" id="fba-diagnostics" values="disabled|enabled" default="disabled"/>
+		<setting label="30002" type="labelenum" id="fba-unibios" values="disabled|enabled" default="disabled"/>
+		<setting label="30003" type="labelenum" id="fba-cpu-speed-adjust" values="100|110|120|130|140|150|160|170|180|190|200" default="100"/>
+		<setting label="30004" type="labelenum" id="fba-controls" values="gamepad|arcade" default="gamepad"/>
 	</category>
 </settings>
 

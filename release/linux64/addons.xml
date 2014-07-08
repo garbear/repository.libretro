@@ -66,7 +66,7 @@ Last updated 2014-5-20 (3d409e2)</description>
 
 <addon id="gameclient.instancingviewer.camera"
 		name="PNG Images (InstancingViewer Camera)"
-		version="2.0.1"
+		version="2.0.2"
 		provider-name="Team Libretro">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -97,7 +97,7 @@ Last updated 2014-1-12 (a32ba3f)</description>
 
 <addon id="gameclient.picodrive"
 		name="Sega MS/GG/MD/CD/32X (Picodrive)"
-		version="1.91.1"
+		version="1.91.2"
 		provider-name="notaz|fdave">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -159,7 +159,7 @@ Last updated 2014-6-4 (91e6842)</description>
 
 <addon id="gameclient.mednafen.pce.fast"
 		name="PC Engine/TurboGrafx-16 (Mednafen PCE Fast)"
-		version="0.9.34"
+		version="0.9.35"
 		provider-name="Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -190,7 +190,7 @@ Last updated 2014-6-4 (2693de3)</description>
 
 <addon id="gameclient.mednafen.psx"
 		name="PlayStation1 (Mednafen PSX)"
-		version="0.9.34"
+		version="0.9.35"
 		provider-name="Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -345,7 +345,7 @@ Last updated 2014-5-14 (e1da6e4)</description>
 
 <addon id="gameclient.dinothawr"
 		name="Dinothawr"
-		version="1.0.1"
+		version="1.0.2"
 		provider-name="Themaister|Agnes Heyer">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -376,7 +376,7 @@ Last updated 2014-5-15 (1c500ba)</description>
 
 <addon id="gameclient.instancingviewer"
 		name="PNG Images (InstancingViewer)"
-		version="3.0.1"
+		version="3.0.2"
 		provider-name="Team Libretro">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -438,7 +438,7 @@ Last updated 2014-6-4 (3e63488)</description>
 
 <addon id="gameclient.mupen64plus"
 		name="Nintendo 64 (Mupen64plus)"
-		version="2.0.1"
+		version="2.0.2"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -531,7 +531,7 @@ Last updated 2014-5-8 (693ce4d)</description>
 
 <addon id="gameclient.modelviewer"
 		name="3D Models (Modelviewer)"
-		version="1.0.1"
+		version="1.0.2"
 		provider-name="Team Libretro">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -593,7 +593,7 @@ Last updated 2014-5-16 (5105b47)</description>
 
 <addon id="gameclient.mednafen.ngp"
 		name="Neo Geo Pocket/Color (Mednafen Neopop)"
-		version="0.9.34"
+		version="0.9.35"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -624,7 +624,7 @@ Last updated 2014-6-4 (2693de3)</description>
 
 <addon id="gameclient.modelviewer.location"
 		name="3D Models (Modelviewer) GPS"
-		version="1.0.1"
+		version="1.0.2"
 		provider-name="Team Libretro">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -655,7 +655,7 @@ Last updated 2014-1-12 (eb9d053)</description>
 
 <addon id="gameclient.fceumm"
 		name="NES / Famicom (FCEUmm)"
-		version="1.0.1"
+		version="1.0.2"
 		provider-name="CaH4e3|FCEU Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -717,7 +717,7 @@ Last updated 2014-5-16 (5105b47)</description>
 
 <addon id="gameclient.nestopia"
 		name="NES / Famicom (NEStopia)"
-		version="1.46.1"
+		version="1.46.2"
 		provider-name="Martin Freij">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -748,7 +748,7 @@ Last updated 2014-4-30 (6dc8c6a)</description>
 
 <addon id="gameclient.handy"
 		name="Lynx (Handy)"
-		version="0.95.1"
+		version="0.95.2"
 		provider-name="K. Wilkins">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -779,7 +779,7 @@ Last updated 2014-5-18 (96880b8)</description>
 
 <addon id="gameclient.mednafen.gba"
 		name="Game Boy Advance (Mednafen VBA)"
-		version="0.9.34"
+		version="0.9.35"
 		provider-name="Forgotten|Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -872,7 +872,7 @@ Last updated 2014-6-4 (2693de3)</description>
 
 <addon id="gameclient.snes9x"
 		name="SNES / Super Famicom (SNES9x)"
-		version="1.53.1"
+		version="1.53.2"
 		provider-name="SNES9x Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -903,7 +903,7 @@ Last updated 2014-4-26 (68e811c)</description>
 
 <addon id="gameclient.fb.alpha"
 		name="Arcade (FBA)"
-		version="0.2.98"
+		version="0.2.99"
 		provider-name="Barry Harris">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1027,7 +1027,7 @@ Last updated 2014-4-26 (073316b)</description>
 
 <addon id="gameclient.scenewalker"
 		name="3D Models (SceneWalker)"
-		version="1.0.1"
+		version="1.0.2"
 		provider-name="Team Libretro">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1089,7 +1089,7 @@ Last updated 2014-5-23 (79884da)</description>
 
 <addon id="gameclient.tyrquake"
 		name="Quake 1 (TyrQuake)"
-		version="0.62.1"
+		version="0.62.2"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1182,7 +1182,7 @@ Last updated 2014-4-30 (678f4b2)</description>
 
 <addon id="gameclient.gambatte"
 		name="Game Boy / Game Boy Color (Gambatte)"
-		version="0.5.1"
+		version="0.5.2"
 		provider-name="Sinamas">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1244,7 +1244,7 @@ Last updated 2014-4-26 (2b9f9a0)</description>
 
 <addon id="gameclient.mednafen.vb"
 		name="Virtual Boy (Mednafen VB)"
-		version="0.9.34"
+		version="0.9.35"
 		provider-name="Ryphecha">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1306,7 +1306,7 @@ Last updated 2014-5-16 (5105b47)</description>
 
 <addon id="gameclient.desmume"
 		name="Nintendo DS (DeSmuME)"
-		version="1.0.1"
+		version="1.0.2"
 		provider-name="YopYop156|Zeromus">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1368,7 +1368,7 @@ Last updated 2014-6-4 (2693de3)</description>
 
 <addon id="gameclient.3dengine"
 		name="3D Engine"
-		version="1.0.1"
+		version="1.0.2"
 		provider-name="Team Libretro">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>

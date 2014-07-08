@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
 	<category label="30000">
-		<setting label="30001" type="labelenum" id="vb_anaglyph_preset" values="disabled|red & blue|red & cyan|red & electric cyan|red & green|green & magenta|yellow & blue"/>
-		<setting label="30002" type="labelenum" id="vb_color_mode" values="black & red|black & white"/>
+		<setting label="30001" type="labelenum" id="vb_anaglyph_preset" values="disabled|red & blue|red & cyan|red & electric cyan|red & green|green & magenta|yellow & blue" default="disabled"/>
+		<setting label="30002" type="labelenum" id="vb_color_mode" values="black & red|black & white" default="black & red"/>
 	</category>
 </settings>
 

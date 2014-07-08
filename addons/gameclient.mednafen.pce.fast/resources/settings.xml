@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
 	<category label="30000">
-		<setting label="30001" type="labelenum" id="pce_nospritelimit" values="disabled|enabled"/>
-		<setting label="30002" type="labelenum" id="pce_keepaspect" values="enabled|disabled"/>
-		<setting label="30003" type="labelenum" id="pce_cddavolume" values="0|10|20|30|40|50|60|70|80|90|100"/>
-		<setting label="30004" type="labelenum" id="pce_adpcmvolume" values="0|10|20|30|40|50|60|70|80|90|100"/>
-		<setting label="30005" type="labelenum" id="pce_cdpsgvolume" values="0|10|20|30|40|50|60|70|80|90|100"/>
-		<setting label="30006" type="labelenum" id="pce_cdspeed" values="1|2|4|8"/>
+		<setting label="30001" type="labelenum" id="pce_nospritelimit" values="disabled|enabled" default="disabled"/>
+		<setting label="30002" type="labelenum" id="pce_keepaspect" values="enabled|disabled" default="enabled"/>
+		<setting label="30003" type="labelenum" id="pce_cddavolume" values="0|10|20|30|40|50|60|70|80|90|100" default="0"/>
+		<setting label="30004" type="labelenum" id="pce_adpcmvolume" values="0|10|20|30|40|50|60|70|80|90|100" default="0"/>
+		<setting label="30005" type="labelenum" id="pce_cdpsgvolume" values="0|10|20|30|40|50|60|70|80|90|100" default="0"/>
+		<setting label="30006" type="labelenum" id="pce_cdspeed" values="1|2|4|8" default="1"/>
 	</category>
 </settings>
 

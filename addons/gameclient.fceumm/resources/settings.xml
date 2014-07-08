@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
 	<category label="30000">
-		<setting label="30001" type="labelenum" id="nes_palette" values="asqrealc|loopy|quor|chris|matt|pasofami|crashman|mess|zaphod-cv|zaphod-smb|vs-drmar|vs-cv|vs-smb"/>
+		<setting label="30001" type="labelenum" id="nes_palette" values="asqrealc|loopy|quor|chris|matt|pasofami|crashman|mess|zaphod-cv|zaphod-smb|vs-drmar|vs-cv|vs-smb" default="asqrealc"/>
 	</category>
 </settings>
 

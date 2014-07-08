@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
 	<category label="30000">
-		<setting label="30001" type="labelenum" id="ngp_language" values="japanese|english"/>
+		<setting label="30001" type="labelenum" id="ngp_language" values="japanese|english" default="japanese"/>
 	</category>
 </settings>
 

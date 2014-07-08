@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
 	<category label="30000">
-		<setting label="30001" type="labelenum" id="blargg_ntsc_filter" values="disabled|composite|svideo|rgb"/>
-		<setting label="30002" type="labelenum" id="palette" values="canonical|consumer|alternative|rgb"/>
-		<setting label="30003" type="labelenum" id="nospritelimit" values="disabled|enabled"/>
+		<setting label="30001" type="labelenum" id="blargg_ntsc_filter" values="disabled|composite|svideo|rgb" default="disabled"/>
+		<setting label="30002" type="labelenum" id="palette" values="canonical|consumer|alternative|rgb" default="canonical"/>
+		<setting label="30003" type="labelenum" id="nospritelimit" values="disabled|enabled" default="disabled"/>
 	</category>
 </settings>
 

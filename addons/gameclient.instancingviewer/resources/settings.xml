@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
 	<category label="30000">
-		<setting label="30001" type="labelenum" id="resolution" values="320x240|360x480|480x272|512x384|512x512|640x240|640x448|640x480|720x576|800x600|960x720|1024x7681024x1024|1280x720|1280x960|1600x1200|1920x1080|1920x1440|1920x1600"/>
-		<setting label="30002" type="labelenum" id="cube_size" values="1|2|4|8|16|32|64|128"/>
-		<setting label="30003" type="labelenum" id="cube_stride" values="2.0|3.0|4.0|5.0|6.0|7.0|8.0"/>
-		<setting label="30004" type="labelenum" id="camera-use" values="false|true"/>
-		<setting label="30005" type="labelenum" id="camera-type" values="texture|raw framebuffer"/>
+		<setting label="30001" type="labelenum" id="resolution" values="320x240|360x480|480x272|512x384|512x512|640x240|640x448|640x480|720x576|800x600|960x720|1024x7681024x1024|1280x720|1280x960|1600x1200|1920x1080|1920x1440|1920x1600" default="320x240"/>
+		<setting label="30002" type="labelenum" id="cube_size" values="1|2|4|8|16|32|64|128" default="1"/>
+		<setting label="30003" type="labelenum" id="cube_stride" values="2.0|3.0|4.0|5.0|6.0|7.0|8.0" default="2.0"/>
+		<setting label="30004" type="labelenum" id="camera-use" values="false|true" default="false"/>
+		<setting label="30005" type="labelenum" id="camera-type" values="texture|raw framebuffer" default="texture"/>
 	</category>
 </settings>
 
