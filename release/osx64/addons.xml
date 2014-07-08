@@ -35,7 +35,7 @@ Last updated 2014-4-26 (ae5ebea)</description>
 
 <addon id="gameclient.bsnes.accuracy"
 		name="SNES / Super Famicom (bSNES Accuracy)"
-		version="94.0.1"
+		version="94.0.2"
 		provider-name="byuu">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -55,7 +55,7 @@ Last updated 2014-4-26 (ae5ebea)</description>
 		<summary lang="en">bsnes/higan Accuracy (v094 (Accuracy))</summary>
 		<description>Supported files: sfc|smc|bml
 
-Last updated 2014-5-16 (5105b47)</description>
+Last updated 2014-6-14 (9fad49b)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -66,7 +66,7 @@ Last updated 2014-5-16 (5105b47)</description>
 
 <addon id="gameclient.bsnes.balanced"
 		name="SNES / Super Famicom (bSNES Balanced)"
-		version="94.0.1"
+		version="94.0.2"
 		provider-name="byuu">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -86,7 +86,7 @@ Last updated 2014-5-16 (5105b47)</description>
 		<summary lang="en">bsnes/higan Balanced (v094 (Balanced))</summary>
 		<description>Supported files: sfc|smc|bml
 
-Last updated 2014-5-16 (5105b47)</description>
+Last updated 2014-6-14 (9fad49b)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -97,7 +97,7 @@ Last updated 2014-5-16 (5105b47)</description>
 
 <addon id="gameclient.bsnes.performance"
 		name="SNES / Super Famicom (bSNES Performance)"
-		version="1.0.1"
+		version="1.0.2"
 		provider-name="byuu">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -117,7 +117,7 @@ Last updated 2014-5-16 (5105b47)</description>
 		<summary lang="en">bsnes/higan Performance ()</summary>
 		<description>Supported files: sfc|smc|bml
 
-Last updated 2014-5-16 (5105b47)</description>
+Last updated 2014-6-14 (9fad49b)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -128,7 +128,7 @@ Last updated 2014-5-16 (5105b47)</description>
 
 <addon id="gameclient.desmume"
 		name="Nintendo DS (DeSmuME)"
-		version="1.0.3"
+		version="1.0.4"
 		provider-name="YopYop156|Zeromus">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -148,7 +148,7 @@ Last updated 2014-5-16 (5105b47)</description>
 		<summary lang="en">DeSmuME (svn)</summary>
 		<description>Supported files: nds|bin
 
-Last updated 2014-5-24 (7a03cab)</description>
+Last updated 2014-6-23 (c2c190c)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -159,7 +159,7 @@ Last updated 2014-5-24 (7a03cab)</description>
 
 <addon id="gameclient.dosbox"
 		name="DOS (DOSBox)"
-		version="1.0.1"
+		version="1.0.2"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -179,7 +179,7 @@ Last updated 2014-5-24 (7a03cab)</description>
 		<summary lang="en">DOSBox (svn)</summary>
 		<description>Supported files: exe|com|bat|conf
 
-Last updated 2014-5-14 (e1da6e4)</description>
+Last updated 2014-6-30 (c45f0d6)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -190,7 +190,7 @@ Last updated 2014-5-14 (e1da6e4)</description>
 
 <addon id="gameclient.fb.alpha"
 		name="Arcade (FBA)"
-		version="0.2.100"
+		version="0.2.101"
 		provider-name="Barry Harris">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -210,7 +210,7 @@ Last updated 2014-5-14 (e1da6e4)</description>
 		<summary lang="en">Final Burn Alpha (v0.2.97.30)</summary>
 		<description>Supported files: iso|zip
 
-Last updated 2014-5-24 (b5904c8)</description>
+Last updated 2014-6-19 (da63555)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -221,7 +221,7 @@ Last updated 2014-5-24 (b5904c8)</description>
 
 <addon id="gameclient.fceumm"
 		name="NES / Famicom (FCEUmm)"
-		version="1.0.3"
+		version="1.0.4"
 		provider-name="CaH4e3|FCEU Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -241,7 +241,7 @@ Last updated 2014-5-24 (b5904c8)</description>
 		<summary lang="en">FCEUmm ((SVN))</summary>
 		<description>Supported files: fds|nes|unif
 
-Last updated 2014-4-26 (937810b)</description>
+Last updated 2014-6-23 (b078056)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -252,7 +252,7 @@ Last updated 2014-4-26 (937810b)</description>
 
 <addon id="gameclient.genesis.plus.gx"
 		name="Sega MS/GG/MD/CD (Genesis Plus GX)"
-		version="1.0.1"
+		version="1.0.2"
 		provider-name="Charles McDonald|Eke-Eke">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -272,7 +272,7 @@ Last updated 2014-4-26 (937810b)</description>
 		<summary lang="en">Genesis Plus GX ()</summary>
 		<description>Supported files: mdx|md|smd|gen|bin|cue|iso|sms|gg|sg
 
-Last updated 2014-5-8 (693ce4d)</description>
+Last updated 2014-6-23 (7cfe8b4)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -345,7 +345,7 @@ Last updated 2014-1-12 (a8e8de6)</description>
 
 <addon id="gameclient.mame078"
 		name="Arcade (MAME 2003)"
-		version="0.78.1"
+		version="0.78.2"
 		provider-name="MAMEdev">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -365,7 +365,7 @@ Last updated 2014-1-12 (a8e8de6)</description>
 		<summary lang="en">MAME 2003 (0.78) (0.78)</summary>
 		<description>Supported files: zip
 
-Last updated 2014-4-26 (91817a9)</description>
+Last updated 2014-6-23 (3e77650)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -376,7 +376,7 @@ Last updated 2014-4-26 (91817a9)</description>
 
 <addon id="gameclient.mame"
 		name="Arcade (MAME 2014)"
-		version="1.0.2"
+		version="1.0.3"
 		provider-name="MAMEdev">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -396,7 +396,7 @@ Last updated 2014-4-26 (91817a9)</description>
 		<summary lang="en">MAME 2014 (Git) (Git)</summary>
 		<description>Supported files: zip|chd|7z
 
-Last updated 2014-6-4 (91e6842)</description>
+Last updated 2014-6-30 (691a0ee)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -748,7 +748,7 @@ Last updated 2014-1-12 (eb9d053)</description>
 
 <addon id="gameclient.nxengine"
 		name="Cave Story (NXEngine)"
-		version="1.0.1"
+		version="1.0.2"
 		provider-name="Caithlin Shaw">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -768,7 +768,7 @@ Last updated 2014-1-12 (eb9d053)</description>
 		<summary lang="en">NXEngine (1.0.0.4)</summary>
 		<description>Supported files: exe
 
-Last updated 2014-5-23 (2a4b495)</description>
+Last updated 2014-7-7 (2fe23bd)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -779,7 +779,7 @@ Last updated 2014-5-23 (2a4b495)</description>
 
 <addon id="gameclient.pcsx.rearmed"
 		name="PlayStation1 (PCSX ReARMed)"
-		version="19.0.1"
+		version="19.0.2"
 		provider-name="PCSX Team|notaz|Exophase">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -799,7 +799,7 @@ Last updated 2014-5-23 (2a4b495)</description>
 		<summary lang="en">PCSX ReARMed (r19)</summary>
 		<description>Supported files: bin|cue|img|mdf|pbp|toc|cbn|m3u
 
-Last updated 2014-4-26 (9c79adf)</description>
+Last updated 2014-6-23 (496d559)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -810,7 +810,7 @@ Last updated 2014-4-26 (9c79adf)</description>
 
 <addon id="gameclient.picodrive"
 		name="Sega MS/GG/MD/CD/32X (Picodrive)"
-		version="1.91.3"
+		version="1.91.4"
 		provider-name="notaz|fdave">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -830,7 +830,7 @@ Last updated 2014-4-26 (9c79adf)</description>
 		<summary lang="en">Picodrive (1.91)</summary>
 		<description>Supported files: bin|gen|smd|md|32x|cue|iso|sms
 
-Last updated 2014-4-26 (05689b3)</description>
+Last updated 2014-6-23 (2f832b7)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -841,7 +841,7 @@ Last updated 2014-4-26 (05689b3)</description>
 
 <addon id="gameclient.prboom"
 		name="Doom (PrBoom)"
-		version="2.5.1"
+		version="2.5.2"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -861,7 +861,7 @@ Last updated 2014-4-26 (05689b3)</description>
 		<summary lang="en">PrBoom (v2.5.0)</summary>
 		<description>Supported files: wad|iwad
 
-Last updated 2014-5-20 (3d409e2)</description>
+Last updated 2014-6-24 (de2f0a0)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -934,7 +934,7 @@ Last updated 2014-1-12 (b70f7eb)</description>
 
 <addon id="gameclient.scummvm"
 		name="ScummVM"
-		version="1.0.1"
+		version="1.0.2"
 		provider-name="SCUMMVMdev">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -954,7 +954,7 @@ Last updated 2014-1-12 (b70f7eb)</description>
 		<summary lang="en">ScummVM (git)</summary>
 		<description>Supported files: exe
 
-Last updated 2014-6-4 (3e63488)</description>
+Last updated 2014-6-30 (3a22d76)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -965,7 +965,7 @@ Last updated 2014-6-4 (3e63488)</description>
 
 <addon id="gameclient.snes9x"
 		name="SNES / Super Famicom (SNES9x)"
-		version="1.53.3"
+		version="1.53.4"
 		provider-name="SNES9x Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -985,7 +985,7 @@ Last updated 2014-6-4 (3e63488)</description>
 		<summary lang="en">SNES9x (1.53)</summary>
 		<description>Supported files: smc|sfc|swc|fig
 
-Last updated 2014-4-26 (68e811c)</description>
+Last updated 2014-6-23 (d7b3bc0)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -996,7 +996,7 @@ Last updated 2014-4-26 (68e811c)</description>
 
 <addon id="gameclient.snes9x.next"
 		name="SNES / Super Famicom (SNES9x Next)"
-		version="1.52.5"
+		version="1.52.6"
 		provider-name="SNES9x Team|Squarepusher">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1016,7 +1016,7 @@ Last updated 2014-4-26 (68e811c)</description>
 		<summary lang="en">SNES9x Next (v1.52.4)</summary>
 		<description>Supported files: smc|fig|sfc|gd3|gd7|dx2|bsx|swc
 
-Last updated 2014-4-30 (678f4b2)</description>
+Last updated 2014-6-23 (7210223)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
@@ -1058,7 +1058,7 @@ Last updated 2014-4-26 (2b9f9a0)</description>
 
 <addon id="gameclient.tyrquake"
 		name="Quake 1 (TyrQuake)"
-		version="0.62.3"
+		version="0.62.4"
 		provider-name="Libretro Team">
 	<requires>
 		<import addon="library.xbmc.libretro" version="1.0.0"/>
@@ -1078,7 +1078,7 @@ Last updated 2014-4-26 (2b9f9a0)</description>
 		<summary lang="en">TyrQuake (v0.62)</summary>
 		<description>Supported files: pak
 
-Last updated 2014-4-26 (054cd36)</description>
+Last updated 2014-6-29 (d202bf5)</description>
 		<license></license>
 		<platform></platform>
 		<nofanart>true</nofanart>
